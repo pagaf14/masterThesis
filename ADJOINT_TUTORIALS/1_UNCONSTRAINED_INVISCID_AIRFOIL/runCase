@@ -1,0 +1,7 @@
+echo -e "\nSTART AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S) "\n"
+
+echo -e "\nSU2 solving the case...\n"
+	python /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/shape_optimization.py -n 6 -g CONTINUOUS_ADJOINT -o SLSQP -f inv_NACA0012_basic.cfg
+echo -e "-->Solved"
+
+echo -e "\nEND AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S)

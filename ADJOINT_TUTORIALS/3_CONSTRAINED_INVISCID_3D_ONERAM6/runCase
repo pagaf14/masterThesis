@@ -1,0 +1,12 @@
+echo -e "\nSTART AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S) "\n"
+
+echo -e "\nSU2 solving the case...\n"
+    python /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/
+shape_optimization.py -n 6 -g DISCRETE_ADJOINT -f inv_ONERAM6_adv.cfg
+echo -e "\n-->Solved"
+
+echo -e "\nBaseline geometry evaluation...\n"
+    mpirun -n 6 SU2_GEO inv_ONERAM6_adv.cfg 
+echo -e "\n-->Solved"
+
+echo -e "\nEND AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S)

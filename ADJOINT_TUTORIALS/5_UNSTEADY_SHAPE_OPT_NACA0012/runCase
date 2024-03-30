@@ -1,0 +1,7 @@
+echo -e "\nSTART AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S) "\n"
+
+echo -e "\nSU2 solving the case...\n"
+    python /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/shape_optimization.py -n 6 -f unsteady_naca0012_opt.cfg
+echo -e "\n-->Solved"
+
+echo -e "\nEND AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S)

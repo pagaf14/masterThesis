@@ -1,0 +1,736 @@
+matteopaganelli:SU2 matteopaganelli$ git fetch
+remote: Enumerating objects: 19082, done.
+remote: Counting objects: 100% (18275/18275), done.
+remote: Compressing objects: 100% (3701/3701), done.
+remote: Total 19082 (delta 14837), reused 17637 (delta 14425), pack-reused 807
+Ricezione degli oggetti: 100% (19082/19082), 23.66 MiB | 3.47 MiB/s, fatto.
+Risoluzione dei delta: 100% (15144/15144), completato con 277 oggetti locali.
+Da https://github.com/su2code/SU2
+   60270690cd..ef8e968128  master                             -> origin/master
+   f329d95119..38cb78b748  develop                            -> origin/develop
+   cc6489bb01..1015a4d5a0  feature_2ndOrderMixedGrids         -> origin/feature_2ndOrderMixedGrids
+ * [nuovo branch]          feature_GradOutput                 -> origin/feature_GradOutput
+   ca29ba2c2b..58f20a6c48  feature_NEMO_slau                  -> origin/feature_NEMO_slau
+ * [nuovo branch]          feature_PBFlow_V8                  -> origin/feature_PBFlow_V8
+ * [nuovo branch]          feature_SA-EDDES_mod               -> origin/feature_SA-EDDES_mod
+ * [nuovo branch]          feature_SST-RC                     -> origin/feature_SST-RC
+ * [nuovo branch]          feature_SST_IDDES                  -> origin/feature_SST_IDDES
+ * [nuovo branch]          feature_UQLM                       -> origin/feature_UQLM
+   5ab6e3962f..8f36934503  feature_WMLES_update               -> origin/feature_WMLES_update
+ * [nuovo branch]          feature_comp_fluid_mixture         -> origin/feature_comp_fluid_mixture
+   bce60be5dc..7ef6e4f9ca  feature_compressible_fluid_mixture -> origin/feature_compressible_fluid_mixture
+ * [nuovo branch]          feature_consistent_extrapolation   -> origin/feature_consistent_extrapolation
+   1e9e91febc..0a0618295d  feature_energy_mixture             -> origin/feature_energy_mixture
+   07dd33c2e2..8cbe673729  feature_fsi_python                 -> origin/feature_fsi_python
+   710b8c1c8a..a3d8d59f60  feature_incompressible             -> origin/feature_incompressible
+   5ef89a535c..52fc4857be  feature_isothermalSWP              -> origin/feature_isothermalSWP
+   ee8d71e0bb..ca2f046bfe  feature_nemoRANS_updated           -> origin/feature_nemoRANS_updated
+ * [nuovo branch]          feature_nemoRANS_updated2          -> origin/feature_nemoRANS_updated2
+   a8e66ed219..c700b706c9  feature_new_flamelet               -> origin/feature_new_flamelet
+   7619e30773..6e36ac1ec1  feature_porous_media_topopt        -> origin/feature_porous_media_topopt
+   334c8cbf67..d7c398e930  feature_pysu2_fsi_adjoint          -> origin/feature_pysu2_fsi_adjoint
+ * [nuovo branch]          feature_restruct_sliding_meshes    -> origin/feature_restruct_sliding_meshes
+   16bf9cdf51..629117916c  feature_signal_handling            -> origin/feature_signal_handling
+ * [nuovo branch]          feature_solid-solid_cht            -> origin/feature_solid-solid_cht
+ * [nuovo branch]          feature_symmetry                   -> origin/feature_symmetry
+ * [nuovo branch]          feature_testcase_fuel              -> origin/feature_testcase_fuel
+   3fa684d1c6..f4bf66953b  fix_volume_names                   -> origin/fix_volume_names
+   33679fdbdb..6d167fc9db  metis_based_ilu_parallelization    -> origin/metis_based_ilu_parallelization
+ * [nuovo tag]             v8.0.1                             -> v8.0.1
+Recupero del sottomodulo externals/codi in corso
+Da https://github.com/scicompkl/CoDiPack
+   eee1b5ee..c6b039e5  develop    -> origin/develop
+   375f51e6..9b6b905e  master     -> origin/master
+ * [nuovo tag]         v2.2.0     -> v2.2.0
+Recupero del sottomodulo externals/medi in corso
+Da https://github.com/SciCompKL/MeDiPack
+   0b9c038..ab3a768  develop    -> origin/develop
+   0b9c038..ab3a768  master     -> origin/master
+Recupero del sottomodulo externals/mel in corso
+Da https://github.com/pcarruscag/MEL
+   2484cd3..90617a1  main       -> origin/main
+ * [nuovo tag]       v1.1.0     -> v1.1.0
+Recupero del sottomodulo externals/meson in corso
+Da https://github.com/mesonbuild/meson
+   da78b969e..84e437179  1.2        -> origin/1.2
+ * [nuovo branch]        1.3        -> origin/1.3
+ * [nuovo branch]        1.tryme    -> origin/1.tryme
+   fb6fd5aa1..675b47b06  master     -> origin/master
+ * [nuovo tag]           1.2.3      -> 1.2.3
+ * [nuovo tag]           1.3.2      -> 1.3.2
+ * [nuovo tag]           1.2.2      -> 1.2.2
+ * [nuovo tag]           1.3.0      -> 1.3.0
+ * [nuovo tag]           1.3.0rc1   -> 1.3.0rc1
+ * [nuovo tag]           1.3.0rc2   -> 1.3.0rc2
+ * [nuovo tag]           1.3.0rc3   -> 1.3.0rc3
+ * [nuovo tag]           1.3.1      -> 1.3.1
+ * [nuovo tag]           1.4.0      -> 1.4.0
+ * [nuovo tag]           1.4.0rc1   -> 1.4.0rc1
+ * [nuovo tag]           1.4.0rc2   -> 1.4.0rc2
+Recupero del sottomodulo externals/opdi in corso
+Da https://github.com/SciCompKL/OpDiLib
+   765903c..8c89798  develop    -> origin/develop
+   c42cca7..93d05a7  master     -> origin/master
+ * [nuovo tag]       v1.5.1     -> v1.5.1
+matteopaganelli:SU2 matteopaganelli$ git checkout --track origin/feature_GradOutput
+M	externals/codi
+M	externals/mel
+M	externals/meson
+M	subprojects/CoolProp
+branch 'feature_GradOutput' set up to track 'origin/feature_GradOutput'.
+Si è passati a un nuovo branch 'feature_GradOutput'
+matteopaganelli:SU2 matteopaganelli$ git fetch
+matteopaganelli:SU2 matteopaganelli$ git pull
+Già aggiornato.
+
+matteopaganelli:SU2 matteopaganelli$ ./meson.py build --reconfigure --prefix=/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/codi does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/codi' to reset the module if necessary.
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp' to reset the module if necessary.
+update CoolProp
+/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp
+/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2
+CoolProp updated
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/mel does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/mel' to reset the module if necessary.
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+The Meson build system
+Version: 0.61.1
+Source dir: /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2
+Build dir: /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/build
+Build type: native build
+Project name: SU2
+Project version: 8.0.0 "Harrier"
+C compiler for the host machine: cc (clang 15.0.0 "Apple clang version 15.0.0 (clang-1500.0.40.1)")
+C linker for the host machine: cc ld64 unknown version
+C++ compiler for the host machine: c++ (clang 15.0.0 "Apple clang version 15.0.0 (clang-1500.0.40.1)")
+C++ linker for the host machine: c++ ld64 unknown version
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/Users/matteopaganelli/.pyenv/versions/3.12.0/bin/python3)
+WARNING: Python files installed by Meson might not be found by python interpreter.
+ This warning can be avoided by setting "python.platlibdir" option.
+WARNING: Python files installed by Meson might not be found by python interpreter.
+ This warning can be avoided by setting "python.purelibdir" option.
+Compiler for C++ supports arguments -Wno-ignored-qualifiers: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C++ supports arguments -Wno-deprecated-declarations: YES (cached)
+Compiler for C++ supports arguments -Wno-error=cast-function-type: YES (cached)
+Compiler for C++ supports arguments -Wno-cast-function-type: YES (cached)
+Compiler for C++ supports arguments -Wno-error=stringop-truncation: NO (cached)
+Compiler for C++ supports arguments -Wno-stringop-truncation: NO (cached)
+Compiler for C++ supports arguments -Wno-error=missing-field-initializers: YES (cached)
+Compiler for C++ supports arguments -Wno-missing-field-initializers: YES (cached)
+Compiler for C++ supports arguments -Wno-error=class-memaccess: NO (cached)
+Compiler for C++ supports arguments -Wno-class-memaccess: NO (cached)
+Dependency mpi found: YES 4.1.5 (cached)
+Dependency mpi found: YES 4.1.5 (cached)
+Compiler for C supports arguments -Wno-unused-result: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Compiler for C supports arguments -Wno-error=unused-function: YES (cached)
+Compiler for C supports arguments -Wno-pedantic: YES (cached)
+Compiler for C supports arguments -Wno-error=stringop-truncation: NO (cached)
+Compiler for C supports arguments -Wno-stringop-truncation: NO (cached)
+Compiler for C supports arguments -Wno-error=absolute-value: YES (cached)
+Compiler for C supports arguments -Wno-error=class-memaccess: NO (cached)
+Compiler for C supports arguments -Wno-unused-result: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-unused-variable: YES (cached)
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Compiler for C supports arguments -Wno-sign-compare: YES (cached)
+Compiler for C supports arguments -Wno-stringop-overflow: NO (cached)
+Compiler for C supports arguments -Wno-error=discarded-qualifiers: NO (cached)
+Compiler for C supports arguments -Wno-error=maybe-uninitialized: NO (cached)
+Compiler for C supports arguments -Wno-error=unused-function: YES (cached)
+Compiler for C supports arguments -Wno-error=unused-label: YES (cached)
+Compiler for C supports arguments -Wno-pedantic: YES (cached)
+Compiler for C supports arguments -Wno-error=stringop-truncation: NO (cached)
+Compiler for C supports arguments -Wno-error=cast-function-type: YES (cached)
+Compiler for C supports arguments -Wno-stringop-truncation: NO (cached)
+Dependency zlib found: YES 1.2.11 (cached)
+Found pkg-config: /usr/local/bin/pkg-config (0.29.2)
+Found CMake: /usr/local/bin/cmake (3.28.2)
+Run-time dependency szip found: NO (tried pkgconfig, framework and cmake)
+Has header "zlib.h" : YES (cached)
+Checking for function "inflate" with dependency zlib: YES (cached)
+Has header "sys/file.h" : YES (cached)
+Has header "sys/ioctl.h" : YES (cached)
+Has header "sys/resource.h" : YES (cached)
+Has header "sys/socket.h" : YES (cached)
+Has header "sys/stat.h" : YES (cached)
+Has header "sys/time.h" : YES (cached)
+Has header "sys/types.h" : YES (cached)
+Has header "features.h" : NO (cached)
+Has header "dirent.h" : YES (cached)
+Has header "setjmp.h" : YES (cached)
+Has header "stddef.h" : YES (cached)
+Has header "stdint.h" : YES (cached)
+Has header "unistd.h" : YES (cached)
+Has header "io.h" : NO (cached)
+Has header "winsock2.h" : NO (cached)
+Has header "globus/common.h" : NO (cached)
+Has header "pdb.h" : NO (cached)
+Has header "pthread.h" : YES (cached)
+Has header "srbclient.h" : NO (cached)
+Has header "string.h" : YES (cached)
+Has header "strings.h" : YES (cached)
+Has header "stdlib.h" : YES (cached)
+Has header "memory.h" : YES (cached)
+Has header "dlfcn.h" : YES (cached)
+Has header "inttypes.h" : YES (cached)
+Has header "netinet/in.h" : YES (cached)
+Has header "netdb.h" : YES (cached)
+Has header "arpa/inet.h" : YES (cached)
+Has header "stdbool.h" : YES (cached)
+Has header "quadmath.h" : NO (cached)
+Library m found: YES
+Checking for function "ceil" with dependency -lm: YES (cached)
+Library dl found: YES
+Checking for function "dlopen" with dependency -ldl: YES (cached)
+Library ucb found: NO
+Checking for function "gethostbyname" with dependency -lucb: NO (cached)
+Checking for function "lseek64" : NO (cached)
+Checking for function "fseeko" : NO (cached)
+Checking for function "stat64" : YES (cached)
+Checking for size of "char" : 1
+Checking for size of "short" : 2
+Checking for size of "int" : 4
+Checking for size of "unsigned" : 4
+Checking for size of "long long" : 8
+Checking for size of "__int64" : -1
+Checking for size of "float" : 4
+Checking for size of "double" : 8
+Checking for size of "long double" : 16
+Checking for size of "int8_t" : 1
+Checking for size of "uint8_t" : 1
+Checking for size of "int_least8_t" : 1
+Checking for size of "uint_least8_t" : 1
+Checking for size of "int_fast8_t" : 1
+Checking for size of "uint_fast8_t" : 1
+Checking for size of "int16_t" : 2
+Checking for size of "uint16_t" : 2
+Checking for size of "int_least16_t" : 2
+Checking for size of "uint_least16_t" : 2
+Checking for size of "int_fast16_t" : 2
+Checking for size of "uint_fast16_t" : 2
+Checking for size of "int32_t" : 4
+Checking for size of "uint32_t" : 4
+Checking for size of "int_least32_t" : 4
+Checking for size of "uint_least32_t" : 4
+Checking for size of "int_fast32_t" : 4
+Checking for size of "uint_fast32_t" : 4
+Checking for size of "int64_t" : 8
+Checking for size of "uint64_t" : 8
+Checking for size of "int_least64_t" : 8
+Checking for size of "uint_least64_t" : 8
+Checking for size of "int_fast64_t" : 8
+Checking for size of "uint_fast64_t" : 8
+Checking for size of "off_t" : 8
+Checking for size of "off64_t" : -1
+Checking for size of "time_t" : 8
+Checking for size of "bool" : 1
+Checking if "check dev_t" : compiles: YES (cached)
+Checking if "check dev_t scalar" runs: NO (1)
+Checking if "CLOCK_MONOTONIC" : compiles: YES (cached)
+Checking whether type "struct tm" has member "tm_gmtoff" : YES (cached)
+Checking whether type "struct tm" has member "__tm_gmtoff" : NO (cached)
+Checking whether type "struct tm" has member "tm_sec" : YES (cached)
+Checking whether type "struct tm" has member "tz_minuteswest" : NO (cached)
+Checking for function "gettimeofday" : YES (cached)
+Checking whether type "struct stat" has member "st_blocks" : YES (cached)
+Checking for function "ioctl" : YES (cached)
+Header <sys/ioctl.h> has symbol "TIOCGWINSZ" : YES (cached)
+Header <sys/ioctl.h> has symbol "TIOCGETD" : YES (cached)
+Checking for function "getpwuid" : YES (cached)
+Checking for function "alarm" : YES (cached)
+Checking for function "fcntl" : YES (cached)
+Checking for function "flock" : YES (cached)
+Checking for function "fork" : YES (cached)
+Checking for function "frexpf" : YES (cached)
+Checking for function "frexpl" : YES (cached)
+Checking for function "gethostname" : YES (cached)
+Checking for function "getrusage" : YES (cached)
+Checking for function "llround" : YES (cached)
+Checking for function "llroundf" : YES (cached)
+Checking for function "lround" : YES (cached)
+Checking for function "lroundf" : YES (cached)
+Checking for function "lstat" : YES (cached)
+Checking for function "pread" : YES (cached)
+Checking for function "pwrite" : YES (cached)
+Checking for function "rand_r" : YES (cached)
+Checking for function "random" : YES (cached)
+Checking for function "round" : YES (cached)
+Checking for function "roundf" : YES (cached)
+Checking for function "setsysinfo" : NO (cached)
+Checking for function "signal" : YES (cached)
+Checking for function "longjmp" : YES (cached)
+Checking for function "setjmp" : YES (cached)
+Checking for function "siglongjmp" : YES (cached)
+Checking for function "sigsetjmp" : YES (cached)
+Checking for function "sigprocmask" : YES (cached)
+Checking for function "snprintf" : YES (cached)
+Checking for function "srandom" : YES (cached)
+Checking for function "strdup" : YES (cached)
+Checking for function "strtoll" : YES (cached)
+Checking for function "strtoull" : YES (cached)
+Checking for function "symlink" : YES (cached)
+Checking for function "system" : YES (cached)
+Checking for function "tmpfile" : YES (cached)
+Checking for function "asprintf" : YES (cached)
+Checking for function "vasprintf" : YES (cached)
+Checking for function "waitpid" : YES (cached)
+Checking for function "vsnprintf" : YES (cached)
+Header <setjmp.h> has symbol "sigsetjmp" : YES (cached)
+Checking if "inline keyword check" : compiles: YES (cached)
+Configuring H5pubconf.h using configuration
+Checking for size of "long" : 8
+Checking for size of "void *" : 8
+Configuring cgnstypes.h using configuration
+Configuring cg_hash_types.h using configuration
+Configuring cgnsconfig.h using configuration
+Compiler for C++ supports arguments -Wno-unused-result: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-variable: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-but-set-variable: YES (cached)
+Compiler for C++ supports arguments -Wno-unknown-pragmas: YES (cached)
+Compiler for C++ supports arguments -Wno-sign-compare: YES (cached)
+Compiler for C++ supports arguments -Wno-clobbered: NO (cached)
+Compiler for C++ supports arguments -Wno-empty-body: YES (cached)
+Compiler for C++ supports arguments -Wno-unused-label: YES (cached)
+Compiler for C++ supports arguments -Wno-misleading-indentation: YES (cached)
+Compiler for C++ supports arguments -Wno-maybe-uninitialized: NO (cached)
+Compiler for C++ supports arguments -Wno-pedantic: YES (cached)
+Compiler for C++ supports arguments -Wno-error=absolute-value: YES (cached)
+Compiler for C++ supports arguments -Wno-absolute-value: YES (cached)
+Message: -------------------------------------------------------------------------
+         |    ___ _   _ ___                                                      |
+         |   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+         |   \__ \ |_| |/ /                                                      |
+         |   |___/\___//___|   Meson Configuration Summary                       |
+         |                                                                       |
+         -------------------------------------------------------------------------
+
+         Option          Value
+         ---------------------
+         TecIO:          false
+         CGNS:           true
+         AD (reverse):   true
+         AD (forward):   false
+         Python Wrapper: false
+         Intel-MKL:      false
+         OpenBlas:       false
+         PaStiX:         false
+         Mixed Float:    false
+         libROM:         false
+         CoolProp:       false
+         MLPCpp:         false
+
+         Please be sure to add the $SU2_HOME and $SU2_RUN environment variables,
+         and update your $PATH (and $PYTHONPATH if applicable) with $SU2_RUN
+
+         Based on the input to this configuration, add these lines to your .bashrc file:
+
+         export SU2_RUN=/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+         export SU2_HOME=/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2
+         export PATH=$PATH:$SU2_RUN
+         export PYTHONPATH=$PYTHONPATH:$SU2_RUN
+
+         Use './ninja -C build install' to compile and install SU2
+
+Build targets in project: 21
+
+SU2 8.0.0 "Harrier"
+
+  User defined options
+    prefix         : /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/
+    enable-autodiff: true
+    enable-tecio   : false
+
+Found ninja-1.10.0.git at /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/ninja
+matteopaganelli:SU2 matteopaganelli$ ./ninja -C build install -j6
+ninja: Entering directory `build'
+[17/569] Compiling C++ object SU2_CFD/src/libSU2core.a.p/solvers_CNEMONSSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CNEMONSSolver.cpp:28:
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNEMONSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:42:29: note: default constructor of 'CNEMONSSolver' is implicitly deleted because base class 'CNEMOEulerSolver' has a deleted default constructor
+class CNEMONSSolver final : public CNEMOEulerSolver {
+                            ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMOEulerSolver.hpp:94:3: note: 'CNEMOEulerSolver' has been explicitly marked deleted here
+  CNEMOEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:21: note: replace 'default' with 'delete'
+  CNEMONSSolver() = default;
+                    ^~~~~~~
+                    delete
+1 warning generated.
+[20/569] Compiling C++ object SU2_CFD/src/libSU2core.a.p/solvers_CSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CSolver.cpp:46:
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:125:19: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startVal' of const-qualified type 'const su2double' (aka 'const double') would not be initialized
+  const su2double startVal, endVal; /*!< \brief "boundary" values. */
+                  ^
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[21/569] Compiling C++ object SU2_CFD/src/libSU2core.a.p/solvers_CNSSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CNSSolver.cpp:28:
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:38:25: note: default constructor of 'CNSSolver' is implicitly deleted because base class 'CEulerSolver' has a deleted default constructor
+class CNSSolver final : public CEulerSolver {
+                        ^
+../SU2_CFD/src/solvers/../../include/solvers/CEulerSolver.hpp:302:3: note: 'CEulerSolver' has been explicitly marked deleted here
+  CEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:17: note: replace 'default' with 'delete'
+  CNSSolver() = default;
+                ^~~~~~~
+                delete
+1 warning generated.
+[215/569] Compiling C++ object Common/src/libSU2CommonAD.a.p/grid_movement_CSurfaceMovement.cpp.o
+In file included from ../Common/src/grid_movement/CSurfaceMovement.cpp:29:
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:126:18: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startDer' of const-qualified type 'const END_TYPE' would not be initialized
+  const END_TYPE startDer, endDer;  /*!< \brief 1st or 2nd derivative "boundary" conditions. */
+                 ^
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[282/569] Compiling C++ object SU2_CFD/src/libSU2core.a.p/solvers_CSolverFactory.cpp.o
+In file included from ../SU2_CFD/src/solvers/CSolverFactory.cpp:32:
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:38:25: note: default constructor of 'CNSSolver' is implicitly deleted because base class 'CEulerSolver' has a deleted default constructor
+class CNSSolver final : public CEulerSolver {
+                        ^
+../SU2_CFD/src/solvers/../../include/solvers/CEulerSolver.hpp:302:3: note: 'CEulerSolver' has been explicitly marked deleted here
+  CEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:17: note: replace 'default' with 'delete'
+  CNSSolver() = default;
+                ^~~~~~~
+                delete
+In file included from ../SU2_CFD/src/solvers/CSolverFactory.cpp:35:
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNEMONSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:42:29: note: default constructor of 'CNEMONSSolver' is implicitly deleted because base class 'CNEMOEulerSolver' has a deleted default constructor
+class CNEMONSSolver final : public CNEMOEulerSolver {
+                            ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMOEulerSolver.hpp:94:3: note: 'CNEMOEulerSolver' has been explicitly marked deleted here
+  CNEMOEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:21: note: replace 'default' with 'delete'
+  CNEMONSSolver() = default;
+                    ^~~~~~~
+                    delete
+2 warnings generated.
+[288/569] Linking static target SU2_CFD/src/libSU2core.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: SU2_CFD/src/libSU2core.a(fluid_CMutationTCLib.cpp.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: SU2_CFD/src/libSU2core.a(numerics_scalar_scalar_sources.cpp.o) has no symbols
+[317/569] Compiling C++ object SU2_CFD/src/libSU2core_AD.a.p/solvers_CSolverFactory.cpp.o
+In file included from ../SU2_CFD/src/solvers/CSolverFactory.cpp:32:
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:38:25: note: default constructor of 'CNSSolver' is implicitly deleted because base class 'CEulerSolver' has a deleted default constructor
+class CNSSolver final : public CEulerSolver {
+                        ^
+../SU2_CFD/src/solvers/../../include/solvers/CEulerSolver.hpp:302:3: note: 'CEulerSolver' has been explicitly marked deleted here
+  CEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:17: note: replace 'default' with 'delete'
+  CNSSolver() = default;
+                ^~~~~~~
+                delete
+In file included from ../SU2_CFD/src/solvers/CSolverFactory.cpp:35:
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNEMONSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:42:29: note: default constructor of 'CNEMONSSolver' is implicitly deleted because base class 'CNEMOEulerSolver' has a deleted default constructor
+class CNEMONSSolver final : public CNEMOEulerSolver {
+                            ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMOEulerSolver.hpp:94:3: note: 'CNEMOEulerSolver' has been explicitly marked deleted here
+  CNEMOEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:21: note: replace 'default' with 'delete'
+  CNEMONSSolver() = default;
+                    ^~~~~~~
+                    delete
+2 warnings generated.
+[341/569] Compiling C++ object SU2_CFD/src/libSU2core_AD.a.p/solvers_CNEMONSSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CNEMONSSolver.cpp:28:
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNEMONSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:42:29: note: default constructor of 'CNEMONSSolver' is implicitly deleted because base class 'CNEMOEulerSolver' has a deleted default constructor
+class CNEMONSSolver final : public CNEMOEulerSolver {
+                            ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMOEulerSolver.hpp:94:3: note: 'CNEMOEulerSolver' has been explicitly marked deleted here
+  CNEMOEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNEMONSSolver.hpp:80:21: note: replace 'default' with 'delete'
+  CNEMONSSolver() = default;
+                    ^~~~~~~
+                    delete
+1 warning generated.
+[346/569] Compiling C++ object SU2_CFD/src/libSU2core_AD.a.p/solvers_CSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CSolver.cpp:46:
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:126:18: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startDer' of const-qualified type 'const END_TYPE' would not be initialized
+  const END_TYPE startDer, endDer;  /*!< \brief 1st or 2nd derivative "boundary" conditions. */
+                 ^
+../SU2_CFD/src/solvers/../../../Common/include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[347/569] Compiling C++ object SU2_CFD/src/libSU2core_AD.a.p/solvers_CNSSolver.cpp.o
+In file included from ../SU2_CFD/src/solvers/CNSSolver.cpp:28:
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CNSSolver() = default;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:38:25: note: default constructor of 'CNSSolver' is implicitly deleted because base class 'CEulerSolver' has a deleted default constructor
+class CNSSolver final : public CEulerSolver {
+                        ^
+../SU2_CFD/src/solvers/../../include/solvers/CEulerSolver.hpp:302:3: note: 'CEulerSolver' has been explicitly marked deleted here
+  CEulerSolver() = delete;
+  ^
+../SU2_CFD/src/solvers/../../include/solvers/CNSSolver.hpp:130:17: note: replace 'default' with 'delete'
+  CNSSolver() = default;
+                ^~~~~~~
+                delete
+1 warning generated.
+[438/569] Compiling C++ object Common/src/libSU2Common.a.p/toolboxes_C1DInterpolation.cpp.o
+In file included from ../Common/src/toolboxes/C1DInterpolation.cpp:28:
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:125:19: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startVal' of const-qualified type 'const su2double' (aka 'const double') would not be initialized
+  const su2double startVal, endVal; /*!< \brief "boundary" values. */
+                  ^
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[439/569] Linking static target SU2_CFD/src/libSU2core_AD.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: SU2_CFD/src/libSU2core_AD.a(fluid_CMutationTCLib.cpp.o) has no symbols
+[441/569] Compiling C++ object Common/src/libSU2Common.a.p/toolboxes_CSymmetricMatrix.cpp.o
+../Common/src/toolboxes/CSymmetricMatrix.cpp:107:11: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    mat = move(inv);
+          ^
+          std::
+../Common/src/toolboxes/CSymmetricMatrix.cpp:206:10: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+  return move(mat);
+         ^
+         std::
+2 warnings generated.
+[467/569] Compiling C++ object Common/src/libSU2Common.a.p/geometry_CGeometry.cpp.o
+../Common/src/geometry/CGeometry.cpp:3636:40: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    CCompressedSparsePatternUL pattern(move(outerPtr), move(innerIdx));
+                                       ^
+                                       std::
+../Common/src/geometry/CGeometry.cpp:3636:56: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    CCompressedSparsePatternUL pattern(move(outerPtr), move(innerIdx));
+                                                       ^
+                                                       std::
+2 warnings generated.
+[476/569] Compiling C++ object Common/src/libSU2Common.a.p/geometry_CPhysicalGeometry.cpp.o
+In file included from ../Common/src/geometry/CPhysicalGeometry.cpp:32:
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:125:19: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startVal' of const-qualified type 'const su2double' (aka 'const double') would not be initialized
+  const su2double startVal, endVal; /*!< \brief "boundary" values. */
+                  ^
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[525/569] Compiling C++ object Common/src/libSU2Common.a.p/grid_movement_CSurfaceMovement.cpp.o
+In file included from ../Common/src/grid_movement/CSurfaceMovement.cpp:29:
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:125:19: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startVal' of const-qualified type 'const su2double' (aka 'const double') would not be initialized
+  const su2double startVal, endVal; /*!< \brief "boundary" values. */
+                  ^
+../Common/src/grid_movement/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[526/569] Linking static target Common/src/libSU2Common.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: Common/src/libSU2Common.a(linear_algebra_CSysSolve_b.cpp.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: Common/src/libSU2Common.a(linear_algebra_CPastixWrapper.cpp.o) has no symbols
+[527/569] Linking target SU2_CFD/src/SU2_CFD
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[528/569] Linking target SU2_DEF/src/SU2_DEF
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[529/569] Linking target SU2_DOT/src/SU2_DOT
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[530/569] Linking target SU2_GEO/src/SU2_GEO
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[531/569] Linking target SU2_SOL/src/SU2_SOL
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[542/569] Compiling C++ object Common/src/libSU2CommonAD.a.p/toolboxes_CSymmetricMatrix.cpp.o
+../Common/src/toolboxes/CSymmetricMatrix.cpp:107:11: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    mat = move(inv);
+          ^
+          std::
+../Common/src/toolboxes/CSymmetricMatrix.cpp:206:10: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+  return move(mat);
+         ^
+         std::
+2 warnings generated.
+[543/569] Compiling C++ object Common/src/libSU2CommonAD.a.p/toolboxes_C1DInterpolation.cpp.o
+In file included from ../Common/src/toolboxes/C1DInterpolation.cpp:28:
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:126:18: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startDer' of const-qualified type 'const END_TYPE' would not be initialized
+  const END_TYPE startDer, endDer;  /*!< \brief 1st or 2nd derivative "boundary" conditions. */
+                 ^
+../Common/src/toolboxes/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[563/569] Compiling C++ object Common/src/libSU2CommonAD.a.p/geometry_CGeometry.cpp.o
+../Common/src/geometry/CGeometry.cpp:3636:40: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    CCompressedSparsePatternUL pattern(move(outerPtr), move(innerIdx));
+                                       ^
+                                       std::
+../Common/src/geometry/CGeometry.cpp:3636:56: warning: unqualified call to 'std::move' [-Wunqualified-std-cast-call]
+    CCompressedSparsePatternUL pattern(move(outerPtr), move(innerIdx));
+                                                       ^
+                                                       std::
+2 warnings generated.
+[565/569] Compiling C++ object Common/src/libSU2CommonAD.a.p/geometry_CPhysicalGeometry.cpp.o
+In file included from ../Common/src/geometry/CPhysicalGeometry.cpp:32:
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:129:3: warning: explicitly defaulted default constructor is implicitly deleted [-Wdefaulted-function-deleted]
+  CCubicSpline() = default;
+  ^
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:126:18: note: default constructor of 'CCubicSpline' is implicitly deleted because field 'startDer' of const-qualified type 'const END_TYPE' would not be initialized
+  const END_TYPE startDer, endDer;  /*!< \brief 1st or 2nd derivative "boundary" conditions. */
+                 ^
+../Common/src/geometry/../../include/toolboxes/C1DInterpolation.hpp:129:20: note: replace 'default' with 'delete'
+  CCubicSpline() = default;
+                   ^~~~~~~
+                   delete
+1 warning generated.
+[566/569] Linking static target Common/src/libSU2CommonAD.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: Common/src/libSU2CommonAD.a(linear_algebra_CPastixWrapper.cpp.o) has no symbols
+[567/569] Linking target SU2_DOT/src/SU2_DOT_AD
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[568/569] Linking target SU2_CFD/src/SU2_CFD_AD
+ld: warning: -undefined error is deprecated
+ld: warning: ignoring duplicate libraries: '-lz'
+[568/569] Installing files.
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/codi does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/codi' to reset the module if necessary.
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp' to reset the module if necessary.
+update CoolProp
+/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/subprojects/CoolProp
+/Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/build
+CoolProp updated
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+WARNING: the currently checked out submodule commit in /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/mel does not match the SHA-1 found in the index.
+Use 'git submodule update --init /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/externals/mel' to reset the module if necessary.
+SHA-1 tag stored in index does not match SHA tag stored in this script.
+Installing SU2_CFD/src/SU2_CFD to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_CFD/src/SU2_CFD_AD to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_DEF/src/SU2_DEF to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_DOT/src/SU2_DOT to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_DOT/src/SU2_DOT_AD to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_GEO/src/SU2_GEO to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing SU2_SOL/src/SU2_SOL to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/continuous_adjoint.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/compute_uncertainty.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/finite_differences.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/mesh_deformation.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/parallel_computation.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/parallel_computation_fsi.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/shape_optimization.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/merge_solution.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/set_ffd_design_var.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/compute_polar.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/discrete_adjoint.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/direct_differentiation.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/fsi_computation.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2_CFD.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/eval/design.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/eval
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/eval/functions.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/eval
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/eval/gradients.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/eval
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/eval/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/eval
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/config.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/config_options.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/data.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/filelock.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/redirect.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/state.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/tools.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/historyMap.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/io/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/io
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/opt/project.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/opt
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/opt/scipy_tools.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/opt
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/opt/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/opt
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/adjoint.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/deform.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/direct.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/interface.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/merge.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/geometry.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/projection.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/run/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/run
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/bunch.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/filter_adjoint.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/lhc_unif.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/misc.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/mp_eval.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/ordered_bunch.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/ordered_dict.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/plot.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/polarSweepLib.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/which.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/switch.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2/util/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2/util
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/FSI_tools/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/FSI_tools
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/FSI_tools/FSIInterface.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/FSI_tools
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/FSI_tools/FSI_config.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/FSI_tools
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2_Nastran/__init__.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2_Nastran
+Installing /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2/SU2_PY/SU2_Nastran/pysu2_nastran.py to /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/SU2_Nastran
+matteopaganelli:SU2 matteopaganelli$ git branch
+* feature_GradOutput
+  master

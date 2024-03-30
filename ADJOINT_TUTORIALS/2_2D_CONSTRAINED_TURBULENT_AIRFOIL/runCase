@@ -1,0 +1,12 @@
+echo -e "\nSTART AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S) "\n"
+
+echo -e "\nGeometry preprocessing...\n"
+    SU2_GEO turb_SA_RAE2822.cfg
+echo -e "\n-->Done\n"
+
+
+echo -e "\nSU2 solving the case...\n"
+    python /Users/matteopaganelli/Desktop/masterThesis/SU2/Codes/SU2_bin/bin/shape_optimization.py -n 6 -g DISCRETE_ADJOINT -o SLSQP -f turb_SA_RAE2822.cfg
+echo -e "\n-->Solved"
+
+echo -e "\nEND AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S)

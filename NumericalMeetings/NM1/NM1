@@ -1,0 +1,22 @@
+# (DISCRETE) ADJOINT OPTIMIZATION
+
+In breve il metodo dell'aggiunto per l'ottimizzazione di forma si basa sulla minimizzazione di una funzione obiettivo J, che può essere per esempio il drag, soggetta a dei vincoli, quali il dover soddisfare le equazioni di governo del fluido,
+una relazione tra la griglia volumetrica e la forma della superficie che sto investigando e poi dei vincoli di tipo geometrico, come per esempio uno spessore minimo dell'ala ecc.
+L'ottimizzazione si basa sulla valutazione del gradiente della funzione obiettivo, rispetto alle variabili di design che controllano la geometria del corpo, e questo gradiente individua la direzione di avanzamento dell'algoritmo.
+Questa valutazione non viene effettuata in maniera diretta, poiché sarebbe computazionalmente troppo onerosa, ma tramite appunto il metodo dell'aggiunto, che consente di ottenere il gradiente della funzione obiettivo, cioè il campo di sensitività, con un costo computazionale equivalente a circa due risoluzioni del campo di moto, indipendentemente dal numero di variabili di design.
+Procedendo con l'algoritmo, le nuove variabili di design trovate descrivono una nuova geometria, ottimizzata, perciò la mesh verrà deformata per corrispondere a questa nuova configurazione.
+Qua ho riportato un esempio dai tutorial proposti da SU2, cioè l'ottimizzazione di un'ala ONERA M6. Come si vede, ottimizzando la geometria, l'effetto dell'onda d'urto lungo l'apertura diventa molto più debole e il drag diminuisce di circa il 27%. 
+
+# GOAL-ORIENTED MESH ADAPTATION
+
+L'adattazione di griglia è un metodo efficace  per migliorare l'accuratezza della soluzione numerica e nel frattempo catturare il comportamento di fenomeni fisici "anisotropi", come per esempio le onde d'urto. Permette in particolare di ottenere la soluzione numerica con l'accuratezza desiderata, riducendo il numero di gradi di libertà, quindi alleggerendo il carico computazionale della simulazione.
+Questo viene ottenuto stimando l'errore associato alla soluzione e distribuendolo in modo uniforme su tutta la mesh aggiustando la dimensione e l'orientamento dei singoli elementi che la compongono.
+Nel caso di "goal-oriented mesh adaptation" l'obiettivo è di ottenere la miglior mesh per osservare un determinato funzionale, come per esempio, anche in questo caso, il drag.
+In generale si tratta di un problema non lineare, perciò, come anche l'ottimizzazione con aggiunto, prevede un ciclo iterativo che viene agganciato ad SU2 ed effettuato da un software esterno: nel mio caso, per qualche applicazione, utilizzerò PyAMG, da cui ho preso questo esempio di adattazione, sempre sull'ONERA M6, in cui si vede come la griglia non strutturata viene rifinita per catturare meglio l'onda d'urto che si sviluppa.
+
+# MESH-ADAPTATION APPLIED TO ADJOINT FRAMEWORK
+
+La mia tesi combina questi due strumenti e il mio obiettivo è quello di costruire un codice Python che permetta di generare una griglia efficiente per il calcolo sia del campo di moto, cioè della soluzione diretta, che del campo di sensitività. A tal proposito si sfrutta il fatto che durante un processo di design aerodinamico viene calcolata la soluzione aggiunta, la quale permette di calcolare la derivata di un funzionale, e usare quest'informazione per la stima dell'errore in un'ottica goal-oriented.
+Qua ho riportato un esempio, sempre sull'ONERA M6, preso da un paper di Park, in cui si rifinisce la griglia stimando un'errore sul drag, che si vede dal grafico che tende a zero procedendo con le iterazioni.
+
+Grazie per l'attenzione.
