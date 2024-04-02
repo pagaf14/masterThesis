@@ -1,0 +1,6 @@
+if temperature is greater than 30
+    it's a hot dat
+otherwise if it's less than 10
+    it's a cold day
+otherwise
+    it's neither hor nor cold

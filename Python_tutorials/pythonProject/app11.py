@@ -1,7 +1,7 @@
 house_price = 1e6
 print("The house price is " + str(house_price) + "€ \n")
 
-buyer_credit = input("How is the buyer credit?\n")
+buyer_credit = input("How is the buyer income?\n")
 
 if buyer_credit.lower() == "good":
     print("Allright! The buyer has to put down 10%, so " + str(house_price * 0.1) + "€")
