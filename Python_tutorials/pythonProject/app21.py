@@ -7,4 +7,4 @@ total = 0
 
 for price in prices:
     total += price 
-print(f"Total: {total}")
+print(f"Total: {total}") # formatted string
