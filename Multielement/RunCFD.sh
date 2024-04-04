@@ -10,8 +10,8 @@ function createLink() {
 
 NRefinements=6
 declare -a ComplexityRations=("1.0" "1.1" "1.1" "1.2" "1.3" "1.5")
-SU2_FOLDER=/media/rausa/4TB/SU2_Versions/SU2_withGradients/bin
-PARAVIEW_FOLDER=/home/rausa/Software/ParaView-5.11.0-RC1-MPI-Linux-Python3.9-x86_64/bin
+SU2_FOLDER=/home/pagaf/Desktop/Codes/SU2_bin/bin
+PARAVIEW_FOLDER=/home/pagaf/ParaView/bin
 
 
 for (( i = 0; i < NRefinements; i++ )); do
@@ -50,6 +50,9 @@ for (( i = 0; i < NRefinements; i++ )); do
 
 
   sed -i 's/^\s*set iter .*$/set iter '$(($i+1))'/' prova.glf
+  
+  pwd
+  ls
 
   pointwise -b prova.glf
 

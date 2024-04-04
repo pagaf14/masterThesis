@@ -548,7 +548,7 @@ Eps_Coarse = 1.2
 decay = 0.7
 maxSpacing = 0.5
 minSpacing = 1e-5
-ComplexityRatio = 1.1
+ComplexityRatio = 1.5
 ScalingCoeffForThreshold = 3
 Smoothing = True
 

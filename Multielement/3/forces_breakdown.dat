@@ -1,0 +1,139 @@
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Suite (Computational Fluid Dynamics Code)         |
+|                                                                       |
+-------------------------------------------------------------------------
+| SU2 Project Website: https://su2code.github.io                        |
+|                                                                       |
+| The SU2 Project is maintained by the SU2 Foundation                   |
+| (http://su2foundation.org)                                            |
+-------------------------------------------------------------------------
+| Copyright 2012-2023, SU2 Contributors                                 |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+
+
+Problem definition:
+
+Compressible RANS equations.
+Turbulence model: Menter's SST
+Mach number: 0.729.
+Angle of attack (AoA): 2 deg, and angle of sideslip (AoS): 0 deg.
+Reynolds number: 6.5e+06.
+Dimensional simulation.
+The reference area is 1 m^2.
+The reference length is 1 m.
+
+
+Problem definition:
+
+Viscous flow: Computing pressure using the ideal gas law
+based on the free-stream temperature and a density computed
+from the Reynolds number.
+Force coefficients computed using free-stream values.
+-- Input conditions:
+Fluid Model: STANDARD_AIR 
+Specific gas constant: 287.058 N.m/kg.K.
+Specific gas constant (non-dim): 287.058
+Specific Heat Ratio: 1.4000 
+Viscosity Model: SUTHERLAND 
+Ref. Laminar Viscosity: 1.716e-05 N.s/m^2.
+Ref. Temperature: 273.15 K.
+Sutherland Constant: 110.4 K.
+Laminar Viscosity (non-dim): 1.716e-05
+Ref. Temperature (non-dim): 273.15
+Sutherland constant (non-dim): 110.4
+Conductivity Model: CONSTANT_PRANDTL 
+Prandtl: 0.72
+Turbulent Conductivity Model: CONSTANT_PRANDTL 
+Turbulent Prandtl: 0.9
+Free-stream static pressure: 38779.2 Pa.
+Free-stream total pressure: 55225.2 Pa.
+Free-stream temperature: 288.15 K.
+Free-stream total temperature: 318.777 K.
+Free-stream density: 0.468824 kg/m^3.
+Free-stream velocity: (247.925, 8.65775) m/s. Magnitude: 248.077 m/s.
+Free-stream total energy per unit mass: 237791 m^2/s^2.
+Free-stream viscosity: 1.7893e-05 N.s/m^2.
+Free-stream turb. kinetic energy per unit mass: 230.782 m^2/s^2.
+Free-stream specific dissipation: 604687 1/s.
+-- Reference values:
+Reference specific gas constant: 1 N.m/kg.K.
+Reference pressure: 1 Pa.
+Reference temperature: 1 K.
+Reference density: 1 kg/m^3.
+Reference velocity: 1 m/s.
+Reference energy per unit mass: 1 m^2/s^2.
+Reference viscosity: 1 N.s/m^2.
+Reference conductivity: 1 W/m^2.K.
+-- Resulting non-dimensional state:
+Mach number (non-dim): 0.729
+Reynolds number (non-dim): 6.5e+06. Re length: 1 m.
+Specific gas constant (non-dim): 287.058
+Free-stream temperature (non-dim): 288.15
+Free-stream pressure (non-dim): 38779.2
+Free-stream density (non-dim): 0.468824
+Free-stream velocity (non-dim): (247.925, 8.65775). Magnitude: 248.077
+Free-stream total energy per unit mass (non-dim): 237791
+Free-stream viscosity (non-dim): 1.7893e-05
+Free-stream turb. kinetic energy (non-dim): 230.782
+Free-stream specific dissipation (non-dim): 604687
+
+
+Forces breakdown:
+
+Center of Pressure: X=0.102633Y+0.555941 m.
+
+NOTE: Multiply forces by the non-dimensional factor: 14426.189482, and the reference factor: 1.000000
+to obtain the dimensional force.
+
+Total CL:       1.785890 | Pressure (  100%):    1.786130 | Friction (    0%):   -0.000240 | Momentum (    0%):    0.000000
+Total CD:       0.246540 | Pressure (   98%):    0.242534 | Friction (    1%):    0.004007 | Momentum (    0%):    0.000000
+Total CL/CD:    7.243804 | Pressure (  101%):    7.364463 | Friction (    0%):   -0.059927 | Momentum (    0%):    0.000000
+Total CMz:      0.548677 | Pressure (  100%):    0.549237 | Friction (    0%):   -0.000560 | Momentum (    0%):    0.000000
+Total CFx:      0.184064 | Pressure (   97%):    0.180051 | Friction (    2%):    0.004013 | Momentum (    0%):    0.000000
+Total CFy:      1.793406 | Pressure (  100%):    1.793506 | Friction (    0%):   -0.000100 | Momentum (    0%):    0.000000
+
+
+Surface name: Airfoil
+
+Total CL    (   86%):    1.550872 | Pressure (   99%):    1.550682 | Friction (    0%):    0.000191 | Momentum (    0%):    0.000000
+Total CD    (   -2%):   -0.006696 | Pressure (  141%):   -0.009470 | Friction (  -41%):    0.002774 | Momentum (    0%):    0.000000
+Total CL/CD (-3197%): -231.612386 | Pressure (   70%): -163.753689 | Friction (    0%):    0.068730 | Momentum (    0%):    0.000000
+Total CMz   (   57%):    0.318200 | Pressure (  100%):    0.318385 | Friction (    0%):   -0.000185 | Momentum (    0%):    0.000000
+Total CFx   (  -33%):   -0.060817 | Pressure (  104%):   -0.063582 | Friction (   -4%):    0.002765 | Momentum (    0%):    0.000000
+Total CFy   (   86%):    1.549694 | Pressure (   99%):    1.549407 | Friction (    0%):    0.000287 | Momentum (    0%):    0.000000
+
+Surface name: Flap
+
+Total CL    (   15%):    0.284065 | Pressure (  100%):    0.284614 | Friction (    0%):   -0.000549 | Momentum (    0%):    0.000000
+Total CD    (   82%):    0.204605 | Pressure (   99%):    0.203618 | Friction (    0%):    0.000987 | Momentum (    0%):    0.000000
+Total CL/CD (   19%):    1.388356 | Pressure (  100%):    1.397781 | Friction (  -40%):   -0.555791 | Momentum (    0%):    0.000000
+Total CMz   (   39%):    0.214077 | Pressure (  100%):    0.214429 | Friction (    0%):   -0.000352 | Momentum (    0%):    0.000000
+Total CFx   (  105%):    0.194567 | Pressure (   99%):    0.193561 | Friction (    0%):    0.001006 | Momentum (    0%):    0.000000
+Total CFy   (   16%):    0.291033 | Pressure (  100%):    0.291547 | Friction (    0%):   -0.000514 | Momentum (    0%):    0.000000
+
+Surface name: Slat
+
+Total CL    (   -2%):   -0.049048 | Pressure (  100%):   -0.049165 | Friction (    0%):    0.000118 | Momentum (    0%):    0.000000
+Total CD    (   19%):    0.048631 | Pressure (   99%):    0.048385 | Friction (    0%):    0.000246 | Momentum (    0%):    0.000000
+Total CL/CD (  -13%):   -1.008569 | Pressure (  100%):   -1.016134 | Friction (  -47%):    0.479159 | Momentum (    0%):    0.000000
+Total CMz   (    2%):    0.016400 | Pressure (  100%):    0.016423 | Friction (    0%):   -0.000023 | Momentum (    0%):    0.000000
+Total CFx   (   27%):    0.050313 | Pressure (   99%):    0.050071 | Friction (    0%):    0.000242 | Momentum (    0%):    0.000000
+Total CFy   (   -2%):   -0.047321 | Pressure (  100%):   -0.047447 | Friction (    0%):    0.000126 | Momentum (    0%):    0.000000
+

@@ -19,9 +19,9 @@ set BLSpacing 8e-6
 
 set Angle 5
 
-set path "/media/rausa/4TB/Validation/MeshAdapt_3D/2D_MultiElement/Meshes/Mesh_"
+set path "/home/pagaf/Desktop/masterThesis/Multielement/Meshes/Mesh_"
 
-set iter 3
+set iter 6
 set iterm1 [expr {$iter - 1}]
 # set iterm1 "0_ModifiedLETE"
 
