@@ -1,0 +1,15 @@
+function createLink() {
+  if [[ -L $2 ]]; then
+    unlink $2
+  fi # chiude il blocco di istruzioni aperto con "if"
+  ln -s $1 $2
+}
+
+i=1
+
+mkdir $i
+cd $i
+
+createLink ../config_acoustic.cfg gianfranco
+
+SU2_CFD gianfranco

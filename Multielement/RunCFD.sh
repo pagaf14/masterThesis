@@ -1,28 +1,32 @@
 
-set -e
+set -e # interrompe se codice di uscita !=0
 
 function createLink() {
   if [[ -L $2 ]]; then
     unlink $2
-  fi
+  fi # chiude il blocco di istruzioni aperto con "if"
   ln -s $1 $2
 }
 
+
 NRefinements=6
-declare -a ComplexityRations=("1.0" "1.1" "1.1" "1.2" "1.3" "1.5")
+
+declare -a ComplexityRations=("1.0" "1.1" "1.1" "1.2" "1.3" "1.5") #dichiarazione array in bash
+
 SU2_FOLDER=/home/pagaf/Desktop/Codes/SU2_bin/bin
 PARAVIEW_FOLDER=/home/pagaf/ParaView/bin
 
 
 for (( i = 0; i < NRefinements; i++ )); do
 
-  #if [[ $i > 0 ]]
-  #then
   mkdir -p $i
   cd $i
   createLink ../Meshes/Mesh_${i}.su2 Mesh.su2
   cp ../*.cfg .
 
+  echo '╦╔╦╗╔═╗╦═╗╔═╗╔╦╗╦╔═╗╔╗╔  ╔╗╔╦ ╦╔╦╗╔╗ ╔═╗╦═╗
+║ ║ ║╣ ╠╦╝╠═╣ ║ ║║ ║║║║  ║║║║ ║║║║╠╩╗║╣ ╠╦╝
+╩ ╩ ╚═╝╩╚═╩ ╩ ╩ ╩╚═╝╝╚╝  ╝╚╝╚═╝╩ ╩╚═╝╚═╝╩╚═'
   echo $i
 
   if [[ $i > 0 ]]
@@ -40,19 +44,13 @@ for (( i = 0; i < NRefinements; i++ )); do
   cd ..
 
 
-
   createLink $i/flow.vtu flow2Refine.vtu
 
   sed -i 's/^\s*ComplexityRatio =.*$/ComplexityRatio = '${ComplexityRations[$i]}'/' CreatePointCloud.py
   python3 CreatePointCloud.py
 
-  #fi
-
 
   sed -i 's/^\s*set iter .*$/set iter '$(($i+1))'/' prova.glf
-  
-  pwd
-  ls
 
   pointwise -b prova.glf
 

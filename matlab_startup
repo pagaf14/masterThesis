@@ -1,3 +1,0 @@
-set(groot, 'defaultFigureCloseRequestFcn', 'close(gcf)');
-set(groot, 'defaultFigureWindowStyle', 'normal');
-warning('off', 'MATLAB:close:RecursionOnClose');
