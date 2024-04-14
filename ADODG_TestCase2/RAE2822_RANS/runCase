@@ -1,0 +1,11 @@
+echo -e "\nSTART AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S) "\n"
+
+echo -e "\nBaseline geometry evaluation...\n"
+    mpirun -n 6 SU2_GEO turb_SA_RAE2822.cfg 
+echo -e "\n-->Solved"
+
+echo -e "\nSU2 solving the case...\n"
+    python3 shape_optimization.py -n 6 -g DISCRETE_ADJOINT -f turb_SA_RAE2822.cfg
+echo -e "\n-->Solved"
+
+echo -e "\nEND AT:" $(date +%d\ %h\ %Y,\ %H:%M:%S)

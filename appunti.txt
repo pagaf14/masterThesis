@@ -1,0 +1,20 @@
+test case 2 di:
+https://sites.google.com/view/mcgill-computational-aerogroup/adodg
+
+3 metriche diverse
+createpointcloud 3 volte con output, mediare le 3 metriche ottenute (cl cd cm)
+gradient mach
+su2_dev_alonso.pdf --> cerca articolo robust
+https://su2code.github.io/documents/su2_dev_alonso.pdf
+
+- stampa metrica su mach, rpessure, calcola e inventa modo per combinarli con python, che saranno sull'aggiunto (media)
+mach con mach --| point cloud con mach
+pressure con pressure -- "
+
+capire legame variabili aggiunte con features (tipo shock)
+vedere se prendere meglio soluzione aggiunta o meno
+
+Papers di rausa:
+- 2021 Alauzet
+- 2021 Park
+- 2012 Palacios

@@ -1,0 +1,93 @@
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Suite (Geometry Definition Code)                  |
+|                                                                       |
+-------------------------------------------------------------------------
+| SU2 Project Website: https://su2code.github.io                        |
+|                                                                       |
+| The SU2 Project is maintained by the SU2 Foundation                   |
+| (http://su2foundation.org)                                            |
+-------------------------------------------------------------------------
+| Copyright 2012-2023, SU2 Contributors                                 |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+
+----------------- Physical Case Definition ( Zone 0 ) -------------------
+Surface(s) where the geometrical based functions is evaluated: AIRFOIL.
+Input mesh file name: mesh_RAE2822_turb_deform.su2
+
+-------------------- Output Information ( Zone 0 ) ----------------------
+
+------------- Config File Boundary Information ( Zone 0 ) ---------------
++-----------------------------------------------------------------------+
+|                        Marker Type|                        Marker Name|
++-----------------------------------------------------------------------+
+|                          Far-field|                           FARFIELD|
++-----------------------------------------------------------------------+
+|                     Heat flux wall|                            AIRFOIL|
++-----------------------------------------------------------------------+
+Two dimensional problem.
+13937 grid points before partitioning.
+22842 volume elements before partitioning.
+2 surface markers.
+192 boundary elements in index 0 (Marker = AIRFOIL).
+40 boundary elements in index 1 (Marker = FARFIELD).
+Executing the partitioning functions.
+Building the graph adjacency structure.
+Calling ParMETIS... graph partitioning complete (831 edge cuts).
+Distributing ParMETIS coloring.
+Rebalancing vertices.
+Rebalancing volume element connectivity.
+Rebalancing markers and surface elements.
+14875 vertices including ghost points. 
+23674 interior elements including halo cells. 
+18780 triangles.
+4894 quadrilaterals.
+Establishing MPI communication patterns.
+
+----------------------- Preprocessing computations ----------------------
+Setting local point connectivity.
+Checking the numerical grid orientation of the interior elements.
+All volume elements are correctly orientend.
+Identify edges and vertices.
+Setting the bound control volume structure.
+Compute the surface curvature.
+Max K: 208.389. Mean K: 8.38297. Standard deviation K: 27.3381.
+Setting reference area and span.
+Wetted area = 2.02131 m.
+Area projection in the x-plane = 0.128073 m, y-plane = 0.995873 m.
+Max. coordinate in the x-direction = 1 m, y-direction = 0.0615117 m.
+Min. coordinate in the x-direction = 0 m, y-direction = -0.0626685 m.
+Set plane structure.
+
+-------------------- Objective function evaluation ----------------------
+
+Station 1. ZCoord: 0 m, Area: 0.0778448 m^2, Thickness: 0.121361 m, 
+Chord: 1 m, LE radius: 151.439 1/m, ToC: 0.121361, Alpha: -0.00974028 deg.
+------------------------- Finalize Solver -------------------------
+Deleted main variables.
+Deleted CGeometry container.
+Deleted CSurfaceMovement class.
+Deleted CFreeFormDefBox class.
+Deleted CConfig container.
+
+
+Completed in 0.004129 seconds on 6 cores.
+
+------------------------- Exit Success (SU2_GEO) ------------------------
+

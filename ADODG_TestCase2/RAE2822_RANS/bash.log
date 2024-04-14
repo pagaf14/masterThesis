@@ -1,0 +1,234 @@
+START AT: 13 apr 2024, 16:15:15 
+
+
+Baseline geometry evaluation...
+
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Suite (Geometry Definition Code)                  |
+|                                                                       |
+-------------------------------------------------------------------------
+| SU2 Project Website: https://su2code.github.io                        |
+|                                                                       |
+| The SU2 Project is maintained by the SU2 Foundation                   |
+| (http://su2foundation.org)                                            |
+-------------------------------------------------------------------------
+| Copyright 2012-2023, SU2 Contributors                                 |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+
+----------------- Physical Case Definition ( Zone 0 ) -------------------
+Surface(s) where the geometrical based functions is evaluated: AIRFOIL.
+Input mesh file name: mesh_RAE2822_turb.su2
+
+-------------------- Output Information ( Zone 0 ) ----------------------
+
+------------- Config File Boundary Information ( Zone 0 ) ---------------
++-----------------------------------------------------------------------+
+|                        Marker Type|                        Marker Name|
++-----------------------------------------------------------------------+
+|                          Far-field|                           FARFIELD|
++-----------------------------------------------------------------------+
+|                     Heat flux wall|                            AIRFOIL|
++-----------------------------------------------------------------------+
+Two dimensional problem.
+13937 grid points before partitioning.
+22842 volume elements before partitioning.
+2 surface markers.
+192 boundary elements in index 0 (Marker = AIRFOIL).
+40 boundary elements in index 1 (Marker = FARFIELD).
+Executing the partitioning functions.
+Building the graph adjacency structure.
+Calling ParMETIS... graph partitioning complete (831 edge cuts).
+Distributing ParMETIS coloring.
+Rebalancing vertices.
+Rebalancing volume element connectivity.
+Rebalancing markers and surface elements.
+14875 vertices including ghost points. 
+23674 interior elements including halo cells. 
+18780 triangles.
+4894 quadrilaterals.
+Establishing MPI communication patterns.
+
+----------------------- Preprocessing computations ----------------------
+Setting local point connectivity.
+Checking the numerical grid orientation of the interior elements.
+All volume elements are correctly orientend.
+Identify edges and vertices.
+Setting the bound control volume structure.
+Compute the surface curvature.
+Max K: 158.363. Mean K: 7.11927. Standard deviation K: 21.0143.
+Setting reference area and span.
+Wetted area = 2.02426 m.
+Area projection in the x-plane = 0.123154 m, y-plane = 0.995873 m.
+Max. coordinate in the x-direction = 1 m, y-direction = 0.0643507 m.
+Min. coordinate in the x-direction = 0 m, y-direction = -0.0577875 m.
+Set plane structure.
+
+-------------------- Objective function evaluation ----------------------
+
+Station 1. ZCoord: 0 m, Area: 0.0778446 m^2, Thickness: 0.121096 m, 
+Chord: 1 m, LE radius: 112.182 1/m, ToC: 0.121096, Alpha: -0.00974028 deg.
+------------------------- Finalize Solver -------------------------
+Deleted main variables.
+Deleted CGeometry container.
+Deleted CSurfaceMovement class.
+Deleted CFreeFormDefBox class.
+Deleted CConfig container.
+
+
+Completed in 0.004597 seconds on 6 cores.
+
+------------------------- Exit Success (SU2_GEO) ------------------------
+
+
+-->Solved
+
+SU2 solving the case...
+
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Aerodynamic Shape Optimization Script             |
+|                                                                       |
+-------------------------------------------------------------------------
+| SU2 Project Website: https://su2code.github.io                        |
+|                                                                       |
+| The SU2 Project is maintained by the SU2 Foundation                   |
+| (http://su2foundation.org)                                            |
+-------------------------------------------------------------------------
+| Copyright 2012-2023, SU2 Contributors (cf. AUTHORS.md)                |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+Found: mesh_RAE2822_turb.su2
+Found: solution_flow.dat
+Found: solution_adj_cd.dat
+Found: solution_adj_cmz.dat
+New Project: ./
+Sequential Least SQuares Programming (SLSQP) parameters:
+Number of design variables: 38 ( 38 ) 
+Objective function scaling factor: [1.0]
+Maximum number of iterations: 100
+Requested accuracy: 1e-16
+Initial guess for the independent variable(s): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+Lower and upper bound for each independent variable: [(-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0), (-100000000.0, 100000000.0)]
+
+  NIT    FC           OBJFUN            GNORM
+    1     2     1.955603E-08     4.331228E-06
+    2     3     1.467243E-08     3.995519E-06
+    3     4     1.428306E-08     2.588371E-06
+    4     5     1.279861E-08     2.563885E-06
+    5     6     1.269661E-08     1.537670E-06
+    6     7     1.251797E-08     1.491227E-06
+    7     8     1.225329E-08     1.978680E-06
+    8     9     1.233533E-08     2.750421E-06
+    9    11     1.224540E-08     2.615502E-06
+   10    13     1.219307E-08     2.350844E-06
+   11    15     1.216429E-08     3.584091E-07
+   12    17     1.216223E-08     3.467255E-07
+   13    18     1.215993E-08     3.440034E-07
+   14    19     1.215866E-08     4.338007E-07
+   15    20     1.276667E-08     8.929994E-07
+   16    26     1.214847E-08     8.646182E-07
+   17    27     1.213737E-08     5.271371E-07
+   18    28     1.212601E-08     5.261345E-07
+   19    29     1.212254E-08     3.608968E-07
+   20    30     1.211545E-08     3.439968E-07
+   21    31     1.211354E-08     5.464811E-07
+   22    32     1.210769E-08     6.310235E-07
+   23    33     1.209770E-08     1.160191E-06
+   24    34     1.208303E-08     1.811658E-06
+   25    35     1.203208E-08     1.606226E-06
+   26    36     1.202548E-08     3.322966E-07
+   27    37     1.202349E-08     3.586526E-07
+   28    38     1.202298E-08     3.342319E-07
+   29    39     1.202553E-08     3.737836E-07
+   30    43     1.202169E-08     3.559609E-07
+   31    44     1.202011E-08     3.763800E-07
+   32    45     1.201912E-08     4.118910E-07
+   33    46     1.201840E-08     4.248609E-07
+   34    47     1.201798E-08     4.209320E-07
+   35    48     1.201768E-08     3.516789E-07
+   36    49     1.201736E-08     3.479529E-07
+   37    50     1.201703E-08     3.502743E-07
+   38    51     1.201684E-08     4.373813E-07
+   39    52     1.205595E-08     8.131404E-07
+   40    57     1.201657E-08     7.796844E-07
+   41    58     1.201572E-08     7.497568E-07
+   42    59     1.201566E-08     4.123807E-07
+   43    60     1.201562E-08     4.179879E-07
+   44    61     1.201545E-08     6.391869E-07
+   45    62     1.201486E-08     6.762193E-07
+   46    63     1.201290E-08     7.800529E-07
+   47    64     1.201215E-08     8.719430E-07
+   48    65     1.201264E-08     8.419015E-07
+   49    67     1.205611E-08     8.480576E-07
+   50    69     1.201250E-08     7.117387E-07
+   51    71     1.201150E-08     5.721704E-07
+   52    73     1.201089E-08     5.499027E-07
+   53    74     1.201112E-08     4.358347E-07
+   54    77     1.201053E-08     4.133377E-07
+   55    78     1.201016E-08     3.796816E-07
+   56    79     1.200942E-08     3.835456E-07
+   57    80     1.200898E-08     4.032900E-07
+   58    81     1.200784E-08     4.070272E-07
+   59    82     1.200670E-08     4.732930E-07
+   60    83     1.200517E-08     4.745842E-07
+   61    84     1.200440E-08     8.784205E-07
+   62    85     1.200273E-08     6.509159E-07
+   63    86     1.200257E-08     5.206731E-07
+   64    87     1.200175E-08     4.669405E-07
+   65    88     1.200137E-08     3.699750E-07
+   66    89     1.199953E-08     3.887584E-07
+   67    90     1.199606E-08     3.736547E-07
+   68    91     1.199752E-08     3.853626E-07
+   69    93     1.199911E-08     3.877663E-07
+   70    95     1.238552E-08     3.994133E-07
+   71    98     1.200937E-08     4.007781E-07
+   72   101     1.200182E-08     4.020990E-07
+   73   103     1.200052E-08     4.041388E-07
+   74   105     1.200593E-08     4.008310E-07
+   75   109     1.199482E-08     3.861387E-07
+   76   110     1.199524E-08     4.097438E-07
+   77   112     1.199977E-08     4.195712E-07
+   78   114     1.200136E-08     5.065239E-07
+   79   117     1.200200E-08     5.131814E-07
+   80   120     1.200842E-08     5.255069E-07
+Optimization terminated successfully    (Exit mode 0)
+            Current function value: 1.1994426569999999e-08
+            Iterations: 80
+            Function evaluations: 127
+            Gradient evaluations: 80
+
+-->Solved
+
+END AT: 14 apr 2024, 07:04:44

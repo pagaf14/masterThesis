@@ -1,0 +1,151 @@
+
+-------------------------------------------------------------------------
+|    ___ _   _ ___                                                      |
+|   / __| | | |_  )   Release 8.0.0 "Harrier"                           |
+|   \__ \ |_| |/ /                                                      |
+|   |___/\___//___|   Suite (Mesh Deformation Code)                     |
+|                                                                       |
+-------------------------------------------------------------------------
+| SU2 Project Website: https://su2code.github.io                        |
+|                                                                       |
+| The SU2 Project is maintained by the SU2 Foundation                   |
+| (http://su2foundation.org)                                            |
+-------------------------------------------------------------------------
+| Copyright 2012-2023, SU2 Contributors                                 |
+|                                                                       |
+| SU2 is free software; you can redistribute it and/or                  |
+| modify it under the terms of the GNU Lesser General Public            |
+| License as published by the Free Software Foundation; either          |
+| version 2.1 of the License, or (at your option) any later version.    |
+|                                                                       |
+| SU2 is distributed in the hope that it will be useful,                |
+| but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+| MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
+| Lesser General Public License for more details.                       |
+|                                                                       |
+| You should have received a copy of the GNU Lesser General Public      |
+| License along with SU2. If not, see <http://www.gnu.org/licenses/>.   |
+-------------------------------------------------------------------------
+
+----------------- Physical Case Definition ( Zone 0 ) -------------------
+Input mesh file name: mesh_RAE2822_turb.su2
+
+---------------- Grid deformation parameters ( Zone 0 )  ----------------
+Grid deformation using a linear elasticity method.
+Design variables definition (markers <-> value <-> param):
+Hicks Henne <-> AIRFOIL <-> -8.92808e-06 <-> ( 0, 0.05 )
+Hicks Henne <-> AIRFOIL <-> -6.78824e-06 <-> ( 0, 0.1 )
+Hicks Henne <-> AIRFOIL <-> -4.66646e-06 <-> ( 0, 0.15 )
+Hicks Henne <-> AIRFOIL <-> -2.69253e-06 <-> ( 0, 0.2 )
+Hicks Henne <-> AIRFOIL <-> -8.78448e-07 <-> ( 0, 0.25 )
+Hicks Henne <-> AIRFOIL <-> 8.15835e-07 <-> ( 0, 0.3 )
+Hicks Henne <-> AIRFOIL <-> 2.45533e-06 <-> ( 0, 0.35 )
+Hicks Henne <-> AIRFOIL <-> 4.10441e-06 <-> ( 0, 0.4 )
+Hicks Henne <-> AIRFOIL <-> 5.80908e-06 <-> ( 0, 0.45 )
+Hicks Henne <-> AIRFOIL <-> 7.57501e-06 <-> ( 0, 0.5 )
+Hicks Henne <-> AIRFOIL <-> 9.32308e-06 <-> ( 0, 0.55 )
+Hicks Henne <-> AIRFOIL <-> 1.08554e-05 <-> ( 0, 0.6 )
+Hicks Henne <-> AIRFOIL <-> 1.18446e-05 <-> ( 0, 0.65 )
+Hicks Henne <-> AIRFOIL <-> 1.18298e-05 <-> ( 0, 0.7 )
+Hicks Henne <-> AIRFOIL <-> 1.03033e-05 <-> ( 0, 0.75 )
+Hicks Henne <-> AIRFOIL <-> 6.91942e-06 <-> ( 0, 0.8 )
+Hicks Henne <-> AIRFOIL <-> 1.61983e-06 <-> ( 0, 0.85 )
+Hicks Henne <-> AIRFOIL <-> -5.66965e-06 <-> ( 0, 0.9 )
+Hicks Henne <-> AIRFOIL <-> -1.98132e-05 <-> ( 0, 0.95 )
+Hicks Henne <-> AIRFOIL <-> -3.14739e-06 <-> ( 1, 0.05 )
+Hicks Henne <-> AIRFOIL <-> -1.8462e-05 <-> ( 1, 0.1 )
+Hicks Henne <-> AIRFOIL <-> -2.03285e-05 <-> ( 1, 0.15 )
+Hicks Henne <-> AIRFOIL <-> -1.56846e-05 <-> ( 1, 0.2 )
+Hicks Henne <-> AIRFOIL <-> -1.01745e-05 <-> ( 1, 0.25 )
+Hicks Henne <-> AIRFOIL <-> -6.81624e-06 <-> ( 1, 0.3 )
+Hicks Henne <-> AIRFOIL <-> -6.01764e-06 <-> ( 1, 0.35 )
+Hicks Henne <-> AIRFOIL <-> -6.24318e-06 <-> ( 1, 0.4 )
+Hicks Henne <-> AIRFOIL <-> -5.13996e-06 <-> ( 1, 0.45 )
+Hicks Henne <-> AIRFOIL <-> -1.03616e-06 <-> ( 1, 0.5 )
+Hicks Henne <-> AIRFOIL <-> 5.67342e-06 <-> ( 1, 0.55 )
+Hicks Henne <-> AIRFOIL <-> 1.19788e-05 <-> ( 1, 0.6 )
+Hicks Henne <-> AIRFOIL <-> 1.34845e-05 <-> ( 1, 0.65 )
+Hicks Henne <-> AIRFOIL <-> 7.86688e-06 <-> ( 1, 0.7 )
+Hicks Henne <-> AIRFOIL <-> -1.24908e-06 <-> ( 1, 0.75 )
+Hicks Henne <-> AIRFOIL <-> -4.86995e-06 <-> ( 1, 0.8 )
+Hicks Henne <-> AIRFOIL <-> 2.29709e-06 <-> ( 1, 0.85 )
+Hicks Henne <-> AIRFOIL <-> 1.3719e-05 <-> ( 1, 0.9 )
+Hicks Henne <-> AIRFOIL <-> 1.83047e-05 <-> ( 1, 0.95 )
+
+-------------------- Output Information ( Zone 0 ) ----------------------
+Output mesh file name: mesh_RAE2822_turb_deform.su2. 
+Cell stiffness scaled by distance to nearest solid surface.
+
+------------- Config File Boundary Information ( Zone 0 ) ---------------
++-----------------------------------------------------------------------+
+|                        Marker Type|                        Marker Name|
++-----------------------------------------------------------------------+
+|                          Far-field|                           FARFIELD|
++-----------------------------------------------------------------------+
+|                     Heat flux wall|                            AIRFOIL|
++-----------------------------------------------------------------------+
+Two dimensional problem.
+13937 grid points before partitioning.
+22842 volume elements before partitioning.
+2 surface markers.
+192 boundary elements in index 0 (Marker = AIRFOIL).
+40 boundary elements in index 1 (Marker = FARFIELD).
+Executing the partitioning functions.
+Building the graph adjacency structure.
+Calling ParMETIS... graph partitioning complete (831 edge cuts).
+Distributing ParMETIS coloring.
+Rebalancing vertices.
+Rebalancing volume element connectivity.
+Rebalancing markers and surface elements.
+14875 vertices including ghost points. 
+23674 interior elements including halo cells. 
+18780 triangles.
+4894 quadrilaterals.
+Establishing MPI communication patterns.
+
+----------------------- Preprocessing computations ----------------------
+Setting local point connectivity.
+Checking the numerical grid orientation of the interior elements.
+All volume elements are correctly orientend.
+All surface elements are correctly orientend.
+Identify edges and vertices.
+Setting the bound control volume structure.
+Area of the computational grid: 32209.9.
+  Info: Ignoring the following volume output fields/groups:
+  SOLUTION
+Volume output fields: COORDINATES
+  Info: Ignoring the following screen output fields:
+  RMS_DENSITY, RMS_NU_TILDE, LIFT, DRAG
+Screen output fields: INNER_ITER
+  Info: Ignoring the following history output groups:
+  RMS_RES, AERO_COEFF
+History output group(s): ITER
+Warning: No (valid) fields chosen for convergence monitoring. Convergence monitoring inactive.
+Warning: No (valid) fields chosen for time convergence monitoring. Time convergence monitoring inactive.
+
+--------------------- Surface grid deformation (ZONE 0) -----------------
+Performing the deformation of the surface grid.
+
+------------------- Volumetric grid deformation (ZONE 0) ----------------
+Performing the deformation of the volumetric grid.
+
+Completed in 0.194586 seconds on 6 cores.
+
+----------------------- Write deformed grid files -----------------------
+|SU2 mesh                           |mesh_RAE2822_turb_deform.su2       |
+|Paraview                           |volume_deformed.vtu                |
+|Paraview surface                   |surface_deformed.vtu               |
+|CSV file                           |surface_deformed.csv               |
+Adding any FFD information to the SU2 file.
+
+------------------------- Finalize Solver -------------------------
+Deleted CNumerics container.
+Deleted CSolver container.
+Deleted CGeometry container.
+Deleted CSurfaceMovement class.
+Deleted CVolumetricMovement class.
+Deleted CConfig container.
+Deleted COutput class.
+
+------------------------- Exit Success (SU2_DEF) ------------------------
+
