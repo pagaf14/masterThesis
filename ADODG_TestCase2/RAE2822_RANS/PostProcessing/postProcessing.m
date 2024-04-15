@@ -188,12 +188,6 @@ legend('DRAG', 'MOMENT_Z');
 xlabel('$x/c$');
 ylabel('Surface sensitivities');
 ylim([-3 2]);
-title('Surface sensitivities ITERATION #19')
+title('Surface sensitivities ITERATION #119')
 
-
-file_name = "RAE2822_SURFACE_SENSITIVITIES_ITER19.pdf"
-if exist(file_name) == 2
-    delete(file_name)
-end
-
-exportStandardizedFigure(gcf, 'RAE2822_SURFACE_SENSITIVITIES_ITER19', 1, 'legendLocation', 'SouthWest','legendOrientation', 'vertical','addMarkers', false, 'changeColors', false);
+exportStandardizedFigure(gcf, 'RAE2822_SURFACE_SENSITIVITIES_ITER119', 1, 'legendLocation', 'SouthWest','legendOrientation', 'vertical','addMarkers', false, 'changeColors', false, 'overwriteFigure', true);
