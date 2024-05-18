@@ -1,0 +1,2 @@
+CreatePointCloud.py:316: RuntimeWarning: invalid value encountered in divide
+  h = diffCoords[ActualIndices2Analyze]/np.repeat(dist[ActualIndices2Analyze, :, np.newaxis], 3, axis=2)
