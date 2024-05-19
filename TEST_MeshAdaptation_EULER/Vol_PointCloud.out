@@ -1,0 +1,45 @@
+Reading point coordinates...
+[' data', 'ZoneType', 'GridCoordinates', 'Elem_Triangles', 'Elem_Quads', 'PointData', 'ZoneIterativeData_t']
+Reading point indices...
+Done! Elapsed time =  0.004996061325073242 s
+Reading gradient of adaptation field...
+Done! Elapsed time =  0.002036571502685547 s
+Reading gradient of adaptation field...
+Done! Elapsed time =  0.002074718475341797 s
+Compute cell volumes/areas of all of the cells...
+Computing Cells volumes...
+N of trias:  2749
+N of quads:  70334
+Done! Elapsed time  0.02175283432006836 s
+Extracting Neighbors points...
+Analyzing  72255  points...
+Arrays created.. Now we store neighbors and cells CellsOfPoint structure
+Cells analyzed:  0
+Cells analyzed:  10000
+Cells analyzed:  20000
+Cells analyzed:  30000
+Cells analyzed:  40000
+Cells analyzed:  50000
+Cells analyzed:  60000
+Cells analyzed:  70000
+Elapsed time  0.2052609920501709 s
+Computing if a point is inside the prescribed bounding box...
+Done!  68242  found inside the box,  4013  found outside. Elapsed time =  0.00818634033203125  s
+Computing initial metric...
+Done! Elapsed time  0.06842422485351562 s
+np.mean(avg_S) =  0.7334166476108395
+np.std(avg_S) =  72.80513540502922
+Computing Cells volumes...
+Done! Elapsed time =  0.002183198928833008  s
+Current complexity of region to adapt =  34990.99922331452
+Total number of points to coarse =  0 , Total number of points to refine =  446
+Smoothing the metric distribution...
+Done! Elapsed time  0.0075571537017822266 s
+Final AdaptedComplexity =  7980752.0738443285
+A complexity ratio of 2.0 has been requested
+Current complexity ratio =  228.08014206484137
+Modify metric to enforce desired complexity ratio
+Reached an error = 7.678670665900444e-05 after 3 iteration
+Final complexity ratio = 1.999846426586682
+N of points hitting max spacing =  0   N of points hitting min spacing =  1653
+Total elapsed time =  0.6474428176879883 s

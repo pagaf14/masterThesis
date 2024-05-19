@@ -27,7 +27,7 @@ WriteAllPoints= False
 # Boundary layer strategy for removing points which are between the surface and
 # a user-defined distance
 BLTreatment= True
-wallDistanceMin= 1e-3
+wallDistanceMin= 1.5e-7
 
 # Set if I want to perform more cycles of refinement by removing
 # each time from the pool the points previously refined

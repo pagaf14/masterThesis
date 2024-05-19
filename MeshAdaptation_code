@@ -1,0 +1,97 @@
+- copia la cartella del test case (tipo multielement) fuori dal github (per non modificarlo), in cui ci sono tutti i file necessari per il setup del testcase che si chiamano _ToUse (tranne i config) (gli stessi che ci sono nella cartella Scripts, comuni a tutti i testcase, ma i nomi e valori giusti sono dentro ai file _ToUse, quindi copia i _ToUse e poi rinominali senza il _ToUse (istruzione presente in Documentation>main.pdf)
+
+Scripts>Steady>RunCase_SteadyAdaptation.sh
+- riga86: possibilità di iniziare da una certa iterata di raffinazione
+! tutte queste variabili sono definite in RunCase_SteadyAdaptation.cfg, quindi nel caso va modificato solo il .cfg, l'.sh rimane così, noi dovremo toccare solo params o cfg
+- simulazione di su2 con 3 config, primo con poche iterazioni e cfl basso, poi il secondo riparte dal primo con cfl maggiore e terzo cfl ancora maggiore per arrivare a convergenza, l'importante è che ci sia il RESTART_SOL = YES, altrimenti riparte da capo ogni volta
+- l'$SU2_FOLDER va definito in RunCase_SteadyAdaptation.cfg, insieme agli altri path
+- finita la simulazione di su2, calcola la metrica
+- BLTreatment: nel caso in cui c'è lo strato limite (simulazione viscosa), separa l'adattazione superficiale a quella di volume, quindi fa prima quella superficiale basata sulla pressione e poi quella di volume, lontano da strato limite, basata sul Mach (nel config a riga 76, mettere BLTreatment = 0 per non attivarlo, = 1 per attivarlo)
+- riga192: exportFieldsAndIndices.py prende la soluzione flow.vtu ed estrae quello che serve (gradienti di mach, pressione, ... dipende dal campo che stiamo adattando)
+- riga194: CreatePointCloud.py calcola la metrica; ci sono gli equivalenti _Fun e _Params, in particolare _Params è l'unico che dobbiamo modificare, quello di riferimento è per una simulazione di navier-stokes.
+
+Scripts>CreatePointCloud_Params.py
+Modifichiamo parametri di raffinamento:
+- Limits = "Box" o "Sphere", decommenta quello che ti serve
+- AdaptationMethod = "Pointwise_OnlyRef" (fa solo raffinamento, no coarsening, per tutti i punti da raffinare calcola la nuova spaziatura e fa l'output di solo quei punti), "Pointwise_WithCoarsening (quelli che non vuole raffinare, li lasca)
+- ErrorComputationMethod = ... come calcola l'errore
+- decay = ... informazione che pointwise considera per capire quanto nel volume propagare la stuttura di griglia desiderata; 0 se solo locale, 1 se dappertutto, 0.8 di default
+
+! Adattazione isotropa, dà in output punto e dimensione cella in quel punto a pointwise
+! Modificare i parametri in CreatePointCloud_Params.py, non toccare le variabili altrimenti rischi di sovrascrivere
+
+L'output di CreatePointCloud.py è un file.dat che contiene le coordinate del punto, la spaziatura desiderata nel punto e l'informazione sul boundary decay
+
+Scripts>Steady>RunCase_SteadyAdaptation.sh
+- riga210: CreateMesh.glf è uno script di pointwise che crea la mesh a partire dal file di output, che ha la sua controparte di funzioni (CreateMesh_Fun.glf) e parametri (CreateMesh_Params.glf)
+
+Scripts>Steady>CreateMesh_Params.glf
+- nDim viene settato in automatico, lasciare stare
+- GRBL = Growth Rate Boundary Layer
+- BLSpacing = altezza prima cella
+- NMaxLayers = numero massimo di layers (dello strato limite) da estrudere (per il TRex), si può limitare imponendo l'altezza dello strato limite
+- BLHeight = altezza strato limite (1e-2 = 1 cm da parete) (non vogliamo rischiare che lo strato limite si estenda troppo e occupi anche lo spazio dove vogliamo raffinare nel volume e lì pointwise non raffina, preferisce lo strato limite al raffinamento)
+- NFullLayers = 1, a meno che abbiamo bordo d'uscita aguzzo
+- TRexBCName = "..." nome della boundary condition di TRex della superficie (pointwise --> solve --> boundary condition)
+- BLTreatment = 1 (se attivato), viene settato dal config (RunCase_SteadyAdaptation.cfg)
+- path "..." non modificare, per come è impostata la simulazione la cartella principale contiene tutti i file, tutti i config e ha una cartella Meshes che contiene Mesh_0, Mesh_1 e le cartelle 0 1 2 3 indicano di raffinamenti
+- set iter = ... la nuova mesh che devo creare, come si deve chiamare; viene settato in automatico dall'.sh, non modificare
+- Boundaries2Ref = nomi dei boundary da modificare (standard sono Flap, Slat ed Airfoil) (nomi delle boundary condition, non dei connettori)
+- Boundaries2Preserve = boundary da non adattare
+- existingDomainsOrBlocks = quali blocchi (domains) esistono e riporta i nomi
+- isNSorEuler = navier-stokes o eulero (se ns prenderà tutte le configurazioni dello strato limite, trex ecc, se eulero non lo fa) (può essere che abbiamo un dominio interno in cui abbiamo il raffinamento e uno esterno dove non lo facciamo ed è solo eulero, quindi domain 1 è navier-stokes, domain 2 è eulero)
+- MaxEdge = massima grandezza delle celle (riprendendo l'esempio di prima, nel dominio 1, quello piccolo, potrei mettere 1e-2, mentre nel dominio 2, più grande, potrei mettere 4.0, quello di default)
+- NSBoundaries = condizioni al contorno di SU2 che sono di navier-stokes
+
+! Se questi nomi sono sbagliati, crasha
+
+Scripts>Steady>RunCase_SteadyAdaptation.sh
+-riga212-227: interpolazione, non modifichiamo
+-- exportTetrahedralized.py: python di paraview che esporta la mesh in tetraedri, da cui dobbiamo interpolare, quella del raffinamento precedente, deve essere tetraedrizzata
+-- InterpSolution.py (con _Fun e _Params)
+
+Scripts>InterpSolution_Params.py
+- triaToll = ... per il 2D va bene anche 1e-15
+- nOfCores = ... quelli a disposizione
+- enforceFieldsGreaterThanZero = True, forzare campi che devono essere maggiori di zero ad essere maggiori di zero, perché può essere che se il contorno è curvo e un punto esce dalla mesh precedente, l'interpolazione esce male, soprattutto le variabili sul contorno, tipo la velocità può diventare negativa, allora con questa opzione impongono che i campi definiti in "FIelds2Adjust" siano positivi
+- interpOnlyNecessaryFields = False, per risparmiare tempo computazionale
+
+Scripts>Steady>RunCase_SteadyAdaptation.sh
+Una volta finita l'interpolazione, torna indietro, riparte dal restart interpolato (riga 104: restart_Interp.dat --> restart_flow.dat)
+- possiamo cambiare numero di iterazioni massime (5000 di default)
+
+TestCases>2D_MultiElementAirfoil>RunCase_SteadyAdaptation_ToUse
+- NRefinements = 15: quante iterazioni di raffinamento fare
+- declare -a MinSurfSpacings = ... c'è la possibilità di far cambiare la spaziatura minima, di superficie e di volume (declare -a MinVolSpacings), con le iterazioni di raffinamento
+- declare -a BLGRs = ... possibilità di far cambiare il growth rate dello strato limite
+- declare -a BLSpacings = ... " altezza prima cella
+- skipCFDIter = -1: se la simulazione si è interrotta, alla iterata 4 tipo, skipCFDIter = 4, startRefIter = 4
+
+Scripts>CreatePointCloud
+- prima parte di input, dove legge i campi che gli servono, le coordinate dei punti, e la connettività, poi legge i gradienti
+- conta quanti tetraedri ci sono
+- (riga 255) isola tutti i punti che rispettano il box di raffinamento, in modo tale da lavorare solo su quei punti, altrimenti lavora su dei punti inutili
+- "Computing initial metric...": calcola l'errore
+- ErrorComputationMethod == Pointwise: proietta il gradiente in direzione degli edge che collegano il punto desiderato e quelli intorno, dopodiché calcola l'errore e seleziona l'errore più grande tra tutti gli edge
+- " == Re: prende semplicemente il gradiente, senza proiettarlo; prende anche la standard deviation, mentre pointwise fa solo la media
+- dopo parte con il raffinamento ("computeSpacing", riga367)
+- smoothing: "più un'arte che una scienza", se uno raffina tanto in alucni punti e in quelli accanto no non va bene
+==> UseLogExpSmoothing: prima fanno il logaritmo dello spacing, poi la media e poi ci fanno l'esponenziale
+- se Pointwise_OnlyRef, dovrebbe dare in output solo i punti che raffina, altrimenti dà anche quelli che non raffina ("WriteAllPoints") a pointwise
+
+! Nella cartella flows mette direttamente i flow con le iterate temporali che coincidono con le iterazioni di refinement
+! Per fare delle prove comincia con dei box abbastanza piccoli per vedere se sta facendo il raffinamento come desiderato
+! Può succedere che raffinando molto, la soluzione diventa steady, soprattutto se ci sono zone separate
+! Nella cartella "Meshes" va messa la mesh di partenza, sia il pointwise che l'su2
+! Lavora con il branch feature_GradOutput perché in output c'è anche la distanza da parete ("WALL_DISTANCE")
+
+PROVA TEST CASE
+- prendi tutti i file .py in Scripts (CreatePointCloud, quelli di paraview e quelli di interpolazione) (che sono uguali per tutti, anche per l'unsteady)
+- prendi tutti i file nella cartella Scripts>Steady
+- dal test case, prendi i file _ToUse, mettili al posto dei corrispondenti e modifica il nome togliendo _ToUse
+- i file vanno messi tutti nella cartella principale
+! Guarda eventuali errori scrivendo cat ().err ().out
+
+[ Io dovrò modificare il file CreatePointCloud.py ]
+
+! Se non funziona qualcosa, apri un issue su github

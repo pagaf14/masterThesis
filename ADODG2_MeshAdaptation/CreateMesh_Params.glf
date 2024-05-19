@@ -6,7 +6,7 @@ set nDim 2
 set GRBL 1.2
 set BLSpacing 1.5e-7
 
-set NMaxLayers 100
+set NMaxLayers 200
 set IsotropicHeight 1.0
 set NFullLayers 1
 set BLHeight 1e-2
