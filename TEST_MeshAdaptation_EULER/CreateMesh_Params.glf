@@ -19,7 +19,7 @@ set Angle 5
 
 set path "./Meshes/Mesh_"
 
-set iter 1
+set iter 2
 set iterm1 [expr {$iter - 1}]
 # set iterm1 "0_ModifiedLETE"
 

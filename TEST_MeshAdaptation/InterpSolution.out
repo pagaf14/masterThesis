@@ -1,0 +1,498 @@
+The Polars package is installed
+The scipy package is installed
+Reading restart file to interpolate from... 
+Done! Elapsed time  0.0058901309967041016 s
+Reading Standard restart...
+Done! Elapsed time  0.00024580955505371094 s
+Now extract the field that I am really interested into...
+Done! Elapsed time  0.00419163703918457 s
+Reading final mesh... 
+Done! Elapsed time  0.28014540672302246 s
+Interpolating from mesh with  72255  points into the new mesh with  161653  points...
+Reading point coordinates...
+Done! Elapsed time 0.0004756450653076172 s
+Computing cell centroids...
+Elapsed time for computing centroids =  0.05415678024291992  s
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  0  to  50000  points
+Going from  0  to  1  elements
+Analyzing  50000  points
+Going from  1  to  2  elements
+Analyzing  12234  points
+Going from  2  to  3  elements
+Analyzing  6724  points
+Going from  3  to  5  elements
+Analyzing  4137  points
+Going from  5  to  10  elements
+Analyzing  1823  points
+Going from  10  to  18  elements
+Analyzing  1223  points
+Going from  18  to  27  elements
+Analyzing  1058  points
+Going from  27  to  38  elements
+Analyzing  906  points
+Going from  38  to  51  elements
+Analyzing  769  points
+Going from  51  to  65  elements
+Analyzing  679  points
+Going from  65  to  80  elements
+Analyzing  660  points
+Going from  80  to  95  elements
+Analyzing  650  points
+Going from  95  to  110  elements
+Analyzing  640  points
+Going from  110  to  125  elements
+Analyzing  638  points
+Going from  125  to  140  elements
+Analyzing  638  points
+Going from  140  to  155  elements
+Analyzing  638  points
+Going from  155  to  170  elements
+Analyzing  638  points
+Going from  170  to  185  elements
+Analyzing  638  points
+Going from  185  to  200  elements
+Analyzing  638  points
+Going from  200  to  215  elements
+Analyzing  638  points
+Going from  215  to  230  elements
+Analyzing  638  points
+Going from  230  to  245  elements
+Analyzing  638  points
+Going from  245  to  260  elements
+Analyzing  638  points
+Going from  260  to  275  elements
+Analyzing  638  points
+Going from  275  to  290  elements
+Analyzing  638  points
+Going from  290  to  305  elements
+Analyzing  638  points
+Going from  305  to  320  elements
+Analyzing  638  points
+Going from  320  to  335  elements
+Analyzing  638  points
+Going from  335  to  350  elements
+Analyzing  638  points
+Going from  350  to  365  elements
+Analyzing  638  points
+Going from  365  to  380  elements
+Analyzing  638  points
+Going from  380  to  395  elements
+Analyzing  638  points
+Going from  395  to  410  elements
+Analyzing  638  points
+Going from  410  to  425  elements
+Analyzing  638  points
+Going from  425  to  440  elements
+Analyzing  638  points
+Going from  440  to  455  elements
+Analyzing  638  points
+Going from  455  to  470  elements
+Analyzing  638  points
+Going from  470  to  485  elements
+Analyzing  638  points
+Going from  485  to  500  elements
+Analyzing  638  points
+Going from  500  to  515  elements
+Analyzing  638  points
+Going from  515  to  530  elements
+Analyzing  638  points
+Going from  530  to  545  elements
+Analyzing  638  points
+Going from  545  to  560  elements
+Analyzing  638  points
+Going from  560  to  575  elements
+Analyzing  638  points
+Going from  575  to  590  elements
+Analyzing  638  points
+Going from  590  to  605  elements
+Analyzing  638  points
+Going from  605  to  620  elements
+Analyzing  638  points
+Going from  620  to  635  elements
+Analyzing  638  points
+Going from  635  to  650  elements
+Analyzing  638  points
+Going from  650  to  665  elements
+Analyzing  638  points
+Going from  665  to  680  elements
+Analyzing  638  points
+Going from  680  to  695  elements
+Analyzing  638  points
+Going from  695  to  710  elements
+Analyzing  638  points
+Going from  710  to  725  elements
+Analyzing  638  points
+Going from  725  to  740  elements
+Analyzing  638  points
+Going from  740  to  755  elements
+Analyzing  638  points
+Going from  755  to  770  elements
+Analyzing  638  points
+Going from  770  to  785  elements
+Analyzing  638  points
+Going from  785  to  800  elements
+Analyzing  638  points
+Going from  800  to  815  elements
+Analyzing  638  points
+Going from  815  to  830  elements
+Analyzing  638  points
+Going from  830  to  845  elements
+Analyzing  638  points
+Going from  845  to  860  elements
+Analyzing  638  points
+Going from  860  to  875  elements
+Analyzing  638  points
+Going from  875  to  890  elements
+Analyzing  638  points
+Going from  890  to  905  elements
+Analyzing  638  points
+Going from  905  to  920  elements
+Analyzing  638  points
+Going from  920  to  935  elements
+Analyzing  638  points
+Going from  935  to  950  elements
+Analyzing  638  points
+Going from  950  to  965  elements
+Analyzing  638  points
+Going from  965  to  980  elements
+Analyzing  638  points
+Going from  980  to  995  elements
+Analyzing  638  points
+Going from  995  to  1000  elements
+Analyzing  638  points
+Cycle time =  0.1570448875427246 s
+Points Not Found  638
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  50000  to  100000  points
+Going from  0  to  1  elements
+Analyzing  50000  points
+Going from  1  to  2  elements
+Analyzing  15034  points
+Going from  2  to  3  elements
+Analyzing  10057  points
+Going from  3  to  4  elements
+Analyzing  8575  points
+Going from  4  to  5  elements
+Analyzing  7759  points
+Going from  5  to  6  elements
+Analyzing  7393  points
+Going from  6  to  7  elements
+Analyzing  7185  points
+Going from  7  to  8  elements
+Analyzing  7064  points
+Going from  8  to  9  elements
+Analyzing  6969  points
+Going from  9  to  10  elements
+Analyzing  6834  points
+Going from  10  to  11  elements
+Analyzing  6707  points
+Going from  11  to  12  elements
+Analyzing  6612  points
+Going from  12  to  13  elements
+Analyzing  6549  points
+Going from  13  to  14  elements
+Analyzing  6482  points
+Going from  14  to  15  elements
+Analyzing  6408  points
+Going from  15  to  16  elements
+Analyzing  6344  points
+Going from  16  to  17  elements
+Analyzing  6285  points
+Going from  17  to  18  elements
+Analyzing  6232  points
+Going from  18  to  19  elements
+Analyzing  6184  points
+Going from  19  to  20  elements
+Analyzing  6143  points
+Going from  20  to  21  elements
+Analyzing  6090  points
+Going from  21  to  22  elements
+Analyzing  6014  points
+Going from  22  to  23  elements
+Analyzing  5982  points
+Going from  23  to  24  elements
+Analyzing  5923  points
+Going from  24  to  25  elements
+Analyzing  5873  points
+Going from  25  to  26  elements
+Analyzing  5807  points
+Going from  26  to  27  elements
+Analyzing  5737  points
+Going from  27  to  28  elements
+Analyzing  5674  points
+Going from  28  to  29  elements
+Analyzing  5612  points
+Going from  29  to  30  elements
+Analyzing  5539  points
+Going from  30  to  31  elements
+Analyzing  5481  points
+Going from  31  to  32  elements
+Analyzing  5425  points
+Going from  32  to  33  elements
+Analyzing  5302  points
+Going from  33  to  34  elements
+Analyzing  5252  points
+Going from  34  to  35  elements
+Analyzing  5155  points
+Going from  35  to  36  elements
+Analyzing  5009  points
+Going from  36  to  38  elements
+Analyzing  4852  points
+Going from  38  to  40  elements
+Analyzing  4526  points
+Going from  40  to  42  elements
+Analyzing  3942  points
+Going from  42  to  45  elements
+Analyzing  2995  points
+Going from  45  to  49  elements
+Analyzing  2001  points
+Going from  49  to  54  elements
+Analyzing  1821  points
+Going from  54  to  59  elements
+Analyzing  1714  points
+Going from  59  to  65  elements
+Analyzing  1622  points
+Going from  65  to  71  elements
+Analyzing  1541  points
+Going from  71  to  77  elements
+Analyzing  1431  points
+Going from  77  to  84  elements
+Analyzing  1326  points
+Going from  84  to  94  elements
+Analyzing  954  points
+Going from  94  to  198  elements
+Analyzing  96  points
+Cycle time =  0.0918428897857666 s
+Points Not Found  0
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  100000  to  150000  points
+Going from  0  to  1  elements
+Analyzing  50000  points
+Going from  1  to  2  elements
+Analyzing  25100  points
+Going from  2  to  3  elements
+Analyzing  22844  points
+Going from  3  to  4  elements
+Analyzing  21237  points
+Going from  4  to  5  elements
+Analyzing  20421  points
+Going from  5  to  6  elements
+Analyzing  19548  points
+Going from  6  to  7  elements
+Analyzing  18609  points
+Going from  7  to  8  elements
+Analyzing  18052  points
+Going from  8  to  9  elements
+Analyzing  17512  points
+Going from  9  to  10  elements
+Analyzing  16982  points
+Going from  10  to  11  elements
+Analyzing  16484  points
+Going from  11  to  12  elements
+Analyzing  16087  points
+Going from  12  to  13  elements
+Analyzing  15748  points
+Going from  13  to  14  elements
+Analyzing  15417  points
+Going from  14  to  15  elements
+Analyzing  15102  points
+Going from  15  to  16  elements
+Analyzing  14760  points
+Going from  16  to  17  elements
+Analyzing  14412  points
+Going from  17  to  18  elements
+Analyzing  14114  points
+Going from  18  to  19  elements
+Analyzing  13785  points
+Going from  19  to  20  elements
+Analyzing  13434  points
+Going from  20  to  21  elements
+Analyzing  13100  points
+Going from  21  to  22  elements
+Analyzing  12705  points
+Going from  22  to  23  elements
+Analyzing  12255  points
+Going from  23  to  24  elements
+Analyzing  11746  points
+Going from  24  to  25  elements
+Analyzing  11225  points
+Going from  25  to  26  elements
+Analyzing  10603  points
+Going from  26  to  27  elements
+Analyzing  9927  points
+Going from  27  to  28  elements
+Analyzing  9232  points
+Going from  28  to  29  elements
+Analyzing  8691  points
+Going from  29  to  30  elements
+Analyzing  8198  points
+Going from  30  to  31  elements
+Analyzing  7729  points
+Going from  31  to  32  elements
+Analyzing  7325  points
+Going from  32  to  33  elements
+Analyzing  6944  points
+Going from  33  to  34  elements
+Analyzing  6660  points
+Going from  34  to  35  elements
+Analyzing  6381  points
+Going from  35  to  36  elements
+Analyzing  6149  points
+Going from  36  to  37  elements
+Analyzing  5882  points
+Going from  37  to  38  elements
+Analyzing  5666  points
+Going from  38  to  39  elements
+Analyzing  5431  points
+Going from  39  to  40  elements
+Analyzing  5243  points
+Going from  40  to  41  elements
+Analyzing  5004  points
+Going from  41  to  43  elements
+Analyzing  4816  points
+Going from  43  to  45  elements
+Analyzing  4436  points
+Going from  45  to  47  elements
+Analyzing  4141  points
+Going from  47  to  49  elements
+Analyzing  3927  points
+Going from  49  to  51  elements
+Analyzing  3689  points
+Going from  51  to  53  elements
+Analyzing  3419  points
+Going from  53  to  56  elements
+Analyzing  3091  points
+Going from  56  to  59  elements
+Analyzing  2605  points
+Going from  59  to  63  elements
+Analyzing  2176  points
+Going from  63  to  68  elements
+Analyzing  1753  points
+Going from  68  to  75  elements
+Analyzing  1321  points
+Going from  75  to  85  elements
+Analyzing  945  points
+Going from  85  to  102  elements
+Analyzing  557  points
+Going from  102  to  134  elements
+Analyzing  305  points
+Going from  134  to  174  elements
+Analyzing  248  points
+Going from  174  to  214  elements
+Analyzing  248  points
+Going from  214  to  254  elements
+Analyzing  248  points
+Going from  254  to  294  elements
+Analyzing  248  points
+Going from  294  to  334  elements
+Analyzing  248  points
+Going from  334  to  374  elements
+Analyzing  248  points
+Going from  374  to  414  elements
+Analyzing  248  points
+Going from  414  to  454  elements
+Analyzing  248  points
+Going from  454  to  494  elements
+Analyzing  248  points
+Going from  494  to  534  elements
+Analyzing  248  points
+Going from  534  to  574  elements
+Analyzing  248  points
+Going from  574  to  614  elements
+Analyzing  248  points
+Going from  614  to  654  elements
+Analyzing  248  points
+Going from  654  to  694  elements
+Analyzing  248  points
+Going from  694  to  734  elements
+Analyzing  248  points
+Going from  734  to  774  elements
+Analyzing  248  points
+Going from  774  to  814  elements
+Analyzing  248  points
+Going from  814  to  854  elements
+Analyzing  248  points
+Going from  854  to  894  elements
+Analyzing  248  points
+Going from  894  to  934  elements
+Analyzing  248  points
+Going from  934  to  974  elements
+Analyzing  248  points
+Going from  974  to  1000  elements
+Analyzing  248  points
+Cycle time =  0.205305814743042 s
+Points Not Found  248
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  150000  to  161653  points
+Going from  0  to  1  elements
+Analyzing  11653  points
+Going from  1  to  2  elements
+Analyzing  5735  points
+Going from  2  to  3  elements
+Analyzing  5199  points
+Going from  3  to  5  elements
+Analyzing  4917  points
+Going from  5  to  7  elements
+Analyzing  4561  points
+Going from  7  to  9  elements
+Analyzing  4193  points
+Going from  9  to  11  elements
+Analyzing  3949  points
+Going from  11  to  13  elements
+Analyzing  3771  points
+Going from  13  to  15  elements
+Analyzing  3623  points
+Going from  15  to  17  elements
+Analyzing  3468  points
+Going from  17  to  19  elements
+Analyzing  3348  points
+Going from  19  to  22  elements
+Analyzing  3214  points
+Going from  22  to  25  elements
+Analyzing  2989  points
+Going from  25  to  28  elements
+Analyzing  2782  points
+Going from  28  to  31  elements
+Analyzing  2535  points
+Going from  31  to  35  elements
+Analyzing  2271  points
+Going from  35  to  40  elements
+Analyzing  1754  points
+Going from  40  to  49  elements
+Analyzing  1084  points
+Going from  49  to  60  elements
+Analyzing  873  points
+Going from  60  to  74  elements
+Analyzing  694  points
+Going from  74  to  101  elements
+Analyzing  359  points
+Going from  101  to  267  elements
+Analyzing  60  points
+Going from  267  to  463  elements
+Analyzing  51  points
+Going from  463  to  659  elements
+Analyzing  51  points
+Going from  659  to  855  elements
+Analyzing  51  points
+Going from  855  to  1000  elements
+Analyzing  51  points
+Cycle time =  0.05006289482116699 s
+Points Not Found  51
+Elapsed time for computing neighbors =  3.2125020027160645 s
+Elapsed time for computing associated triangles =  3.71779727935791  s
+Time for points =  0.11962294578552246 s time for fun =  0.31032681465148926 s
+Number of points not found in tria/tetra =  937
+Interpolating solution via barycentric coordinates...
+Going from  0  to  160716  points
+Elapsed time for Interpolating solution via barycentric coordinates =  0.048761606216430664  s
+Interpolating solution via Nearest Neighbor...
+Elapsed time for Interpolating solution via Nearest Neighbor =  0.07187056541442871  s
+Total Elapsed time =  3.9284212589263916  s
+Field Eddy_Viscosity is not present here!
+Write interpolated restart...
+Done! Elapsed time 0.007495403289794922 s

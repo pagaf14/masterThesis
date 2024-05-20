@@ -1,9 +1,49 @@
 Reading point coordinates...
 [' data', 'ZoneType', 'GridCoordinates', 'Elem_Triangles', 'Elem_Quads', 'PointData', 'ZoneIterativeData_t']
 Reading point indices...
-Done! Elapsed time =  0.0205841064453125 s
+Done! Elapsed time =  0.004582643508911133 s
 Reading gradient of adaptation field...
-Done! Elapsed time =  0.009774446487426758 s
+Done! Elapsed time =  0.001956939697265625 s
 Reading gradient of adaptation field...
-Done! Elapsed time =  0.011046409606933594 s
+Done! Elapsed time =  0.0020585060119628906 s
 Reading wall distance field...
+Done! Elapsed time =  0.0006852149963378906 s
+Compute cell volumes/areas of all of the cells...
+Computing Cells volumes...
+N of trias:  2749
+N of quads:  70334
+Done! Elapsed time  0.020639896392822266 s
+Extracting Neighbors points...
+Analyzing  72255  points...
+Arrays created.. Now we store neighbors and cells CellsOfPoint structure
+Cells analyzed:  0
+Cells analyzed:  10000
+Cells analyzed:  20000
+Cells analyzed:  30000
+Cells analyzed:  40000
+Cells analyzed:  50000
+Cells analyzed:  60000
+Cells analyzed:  70000
+Elapsed time  0.17891526222229004 s
+Computing if a point is inside the prescribed bounding box...
+Done!  68242  found inside the box,  4013  found outside. Elapsed time =  0.0075206756591796875  s
+Checking which points are farther from the wall than the minimum distance set...
+Done!  39104  found outside the BL and inside the box,  33151  found inside the BL. Elapsed time =  0.015041351318359375  s
+Computing initial metric...
+Done! Elapsed time  0.04736971855163574 s
+np.mean(avg_S) =  0.0075930216159864365
+np.std(avg_S) =  0.02174601934733064
+Computing Cells volumes...
+Done! Elapsed time =  0.0020170211791992188  s
+Current complexity of region to adapt =  31751.584296239012
+Total number of points to coarse =  0 , Total number of points to refine =  6404
+Smoothing the metric distribution...
+Done! Elapsed time  0.0069124698638916016 s
+Final AdaptedComplexity =  278348.391724382
+A complexity ratio of 2.0 has been requested
+Current complexity ratio =  8.766441042041246
+Modify metric to enforce desired complexity ratio
+Reached an error = 0.00032723602096473847 after 5 iteration
+Final complexity ratio = 1.9993455279580705
+N of points hitting max spacing =  0   N of points hitting min spacing =  6344
+Total elapsed time =  0.5711724758148193 s

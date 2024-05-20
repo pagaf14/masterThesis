@@ -1,0 +1,284 @@
+The Polars package is installed
+The scipy package is installed
+Reading restart file to interpolate from... 
+Done! Elapsed time  0.004271507263183594 s
+Reading Standard restart...
+Done! Elapsed time  0.0003371238708496094 s
+Now extract the field that I am really interested into...
+Done! Elapsed time  0.002977132797241211 s
+Reading final mesh... 
+Done! Elapsed time  0.18730664253234863 s
+Interpolating from mesh with  46571  points into the new mesh with  95631  points...
+Reading point coordinates...
+Done! Elapsed time 0.0003197193145751953 s
+Computing cell centroids...
+Elapsed time for computing centroids =  0.022608041763305664  s
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  0  to  50000  points
+Going from  0  to  1  elements
+Analyzing  50000  points
+Going from  1  to  2  elements
+Analyzing  5859  points
+Going from  2  to  9  elements
+Analyzing  1422  points
+Going from  9  to  26  elements
+Analyzing  570  points
+Going from  26  to  48  elements
+Analyzing  451  points
+Going from  48  to  79  elements
+Analyzing  320  points
+Going from  79  to  114  elements
+Analyzing  282  points
+Going from  114  to  155  elements
+Analyzing  239  points
+Going from  155  to  197  elements
+Analyzing  236  points
+Going from  197  to  239  elements
+Analyzing  236  points
+Going from  239  to  281  elements
+Analyzing  236  points
+Going from  281  to  323  elements
+Analyzing  236  points
+Going from  323  to  365  elements
+Analyzing  236  points
+Going from  365  to  407  elements
+Analyzing  236  points
+Going from  407  to  449  elements
+Analyzing  236  points
+Going from  449  to  491  elements
+Analyzing  236  points
+Going from  491  to  533  elements
+Analyzing  236  points
+Going from  533  to  575  elements
+Analyzing  236  points
+Going from  575  to  617  elements
+Analyzing  236  points
+Going from  617  to  659  elements
+Analyzing  236  points
+Going from  659  to  701  elements
+Analyzing  236  points
+Going from  701  to  743  elements
+Analyzing  236  points
+Going from  743  to  785  elements
+Analyzing  236  points
+Going from  785  to  827  elements
+Analyzing  236  points
+Going from  827  to  869  elements
+Analyzing  236  points
+Going from  869  to  911  elements
+Analyzing  236  points
+Going from  911  to  953  elements
+Analyzing  236  points
+Going from  953  to  995  elements
+Analyzing  236  points
+Going from  995  to  1000  elements
+Analyzing  236  points
+Cycle time =  0.06786012649536133 s
+Points Not Found  236
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  50000  to  95631  points
+Going from  0  to  1  elements
+Analyzing  45631  points
+Going from  1  to  2  elements
+Analyzing  17080  points
+Going from  2  to  3  elements
+Analyzing  14216  points
+Going from  3  to  4  elements
+Analyzing  13383  points
+Going from  4  to  5  elements
+Analyzing  12882  points
+Going from  5  to  6  elements
+Analyzing  12581  points
+Going from  6  to  7  elements
+Analyzing  12198  points
+Going from  7  to  8  elements
+Analyzing  11959  points
+Going from  8  to  9  elements
+Analyzing  11784  points
+Going from  9  to  10  elements
+Analyzing  11567  points
+Going from  10  to  11  elements
+Analyzing  11381  points
+Going from  11  to  12  elements
+Analyzing  11238  points
+Going from  12  to  13  elements
+Analyzing  11120  points
+Going from  13  to  14  elements
+Analyzing  11005  points
+Going from  14  to  15  elements
+Analyzing  10872  points
+Going from  15  to  16  elements
+Analyzing  10780  points
+Going from  16  to  17  elements
+Analyzing  10669  points
+Going from  17  to  18  elements
+Analyzing  10555  points
+Going from  18  to  19  elements
+Analyzing  10452  points
+Going from  19  to  20  elements
+Analyzing  10354  points
+Going from  20  to  21  elements
+Analyzing  10253  points
+Going from  21  to  22  elements
+Analyzing  10165  points
+Going from  22  to  23  elements
+Analyzing  10063  points
+Going from  23  to  24  elements
+Analyzing  9949  points
+Going from  24  to  25  elements
+Analyzing  9835  points
+Going from  25  to  26  elements
+Analyzing  9688  points
+Going from  26  to  27  elements
+Analyzing  9524  points
+Going from  27  to  28  elements
+Analyzing  9371  points
+Going from  28  to  29  elements
+Analyzing  9254  points
+Going from  29  to  30  elements
+Analyzing  9127  points
+Going from  30  to  31  elements
+Analyzing  8926  points
+Going from  31  to  32  elements
+Analyzing  8698  points
+Going from  32  to  33  elements
+Analyzing  8499  points
+Going from  33  to  34  elements
+Analyzing  8305  points
+Going from  34  to  35  elements
+Analyzing  8080  points
+Going from  35  to  36  elements
+Analyzing  7858  points
+Going from  36  to  37  elements
+Analyzing  7575  points
+Going from  37  to  38  elements
+Analyzing  7214  points
+Going from  38  to  39  elements
+Analyzing  6868  points
+Going from  39  to  40  elements
+Analyzing  6454  points
+Going from  40  to  41  elements
+Analyzing  5950  points
+Going from  41  to  42  elements
+Analyzing  5498  points
+Going from  42  to  44  elements
+Analyzing  4955  points
+Going from  44  to  46  elements
+Analyzing  3931  points
+Going from  46  to  48  elements
+Analyzing  3510  points
+Going from  48  to  50  elements
+Analyzing  3352  points
+Going from  50  to  53  elements
+Analyzing  3268  points
+Going from  53  to  56  elements
+Analyzing  3133  points
+Going from  56  to  59  elements
+Analyzing  3051  points
+Going from  59  to  62  elements
+Analyzing  2974  points
+Going from  62  to  65  elements
+Analyzing  2901  points
+Going from  65  to  68  elements
+Analyzing  2819  points
+Going from  68  to  71  elements
+Analyzing  2722  points
+Going from  71  to  74  elements
+Analyzing  2637  points
+Going from  74  to  77  elements
+Analyzing  2523  points
+Going from  77  to  81  elements
+Analyzing  2340  points
+Going from  81  to  85  elements
+Analyzing  2033  points
+Going from  85  to  91  elements
+Analyzing  1639  points
+Going from  91  to  104  elements
+Analyzing  725  points
+Going from  104  to  124  elements
+Analyzing  490  points
+Going from  124  to  147  elements
+Analyzing  429  points
+Going from  147  to  173  elements
+Analyzing  381  points
+Going from  173  to  199  elements
+Analyzing  381  points
+Going from  199  to  225  elements
+Analyzing  381  points
+Going from  225  to  251  elements
+Analyzing  381  points
+Going from  251  to  277  elements
+Analyzing  381  points
+Going from  277  to  303  elements
+Analyzing  381  points
+Going from  303  to  329  elements
+Analyzing  381  points
+Going from  329  to  355  elements
+Analyzing  381  points
+Going from  355  to  381  elements
+Analyzing  381  points
+Going from  381  to  407  elements
+Analyzing  381  points
+Going from  407  to  433  elements
+Analyzing  381  points
+Going from  433  to  459  elements
+Analyzing  381  points
+Going from  459  to  485  elements
+Analyzing  381  points
+Going from  485  to  511  elements
+Analyzing  381  points
+Going from  511  to  537  elements
+Analyzing  381  points
+Going from  537  to  563  elements
+Analyzing  381  points
+Going from  563  to  589  elements
+Analyzing  381  points
+Going from  589  to  615  elements
+Analyzing  381  points
+Going from  615  to  641  elements
+Analyzing  381  points
+Going from  641  to  667  elements
+Analyzing  381  points
+Going from  667  to  693  elements
+Analyzing  381  points
+Going from  693  to  719  elements
+Analyzing  381  points
+Going from  719  to  745  elements
+Analyzing  381  points
+Going from  745  to  771  elements
+Analyzing  381  points
+Going from  771  to  797  elements
+Analyzing  381  points
+Going from  797  to  823  elements
+Analyzing  381  points
+Going from  823  to  849  elements
+Analyzing  381  points
+Going from  849  to  875  elements
+Analyzing  381  points
+Going from  875  to  901  elements
+Analyzing  381  points
+Going from  901  to  927  elements
+Analyzing  381  points
+Going from  927  to  953  elements
+Analyzing  381  points
+Going from  953  to  979  elements
+Analyzing  381  points
+Going from  979  to  1000  elements
+Analyzing  381  points
+Cycle time =  0.2080848217010498 s
+Points Not Found  381
+Elapsed time for computing neighbors =  1.9436142444610596 s
+Elapsed time for computing associated triangles =  2.220111131668091  s
+Time for points =  0.06691646575927734 s time for fun =  0.17011642456054688 s
+Number of points not found in tria/tetra =  617
+Interpolating solution via barycentric coordinates...
+Going from  0  to  95014  points
+Elapsed time for Interpolating solution via barycentric coordinates =  0.02768874168395996  s
+Interpolating solution via Nearest Neighbor...
+Elapsed time for Interpolating solution via Nearest Neighbor =  0.03922724723815918  s
+Total Elapsed time =  2.3355050086975098  s
+Field Eddy_Viscosity is not present here!
+Write interpolated restart...
+Done! Elapsed time 0.004914283752441406 s

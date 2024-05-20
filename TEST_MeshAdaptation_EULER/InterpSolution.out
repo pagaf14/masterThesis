@@ -1,0 +1,66 @@
+The Polars package is installed
+The scipy package is installed
+Reading restart file to interpolate from... 
+Done! Elapsed time  0.002534627914428711 s
+Reading Standard restart...
+Done! Elapsed time  0.0002067089080810547 s
+Now extract the field that I am really interested into...
+Done! Elapsed time  0.0012786388397216797 s
+Reading final mesh... 
+Done! Elapsed time  0.085052490234375 s
+Interpolating from mesh with  25557  points into the new mesh with  46888  points...
+Reading point coordinates...
+Done! Elapsed time 0.000202178955078125 s
+Computing cell centroids...
+Elapsed time for computing centroids =  0.014387369155883789  s
+Computing neighbors tria/tetra from tree structure...
+Computing associated triangles...
+Going from  0  to  46888  points
+Going from  0  to  1  elements
+Analyzing  46888  points
+Going from  1  to  2  elements
+Analyzing  9420  points
+Going from  2  to  4  elements
+Analyzing  4028  points
+Going from  4  to  12  elements
+Analyzing  1189  points
+Going from  12  to  97  elements
+Analyzing  117  points
+Going from  97  to  182  elements
+Analyzing  117  points
+Going from  182  to  267  elements
+Analyzing  117  points
+Going from  267  to  352  elements
+Analyzing  117  points
+Going from  352  to  437  elements
+Analyzing  117  points
+Going from  437  to  522  elements
+Analyzing  117  points
+Going from  522  to  607  elements
+Analyzing  117  points
+Going from  607  to  692  elements
+Analyzing  117  points
+Going from  692  to  777  elements
+Analyzing  117  points
+Going from  777  to  862  elements
+Analyzing  117  points
+Going from  862  to  947  elements
+Analyzing  117  points
+Going from  947  to  1000  elements
+Analyzing  117  points
+Cycle time =  0.056070566177368164 s
+Points Not Found  117
+Elapsed time for computing neighbors =  1.1295456886291504 s
+Elapsed time for computing associated triangles =  1.1860098838806152  s
+Time for points =  0.013465404510498047 s time for fun =  0.03348493576049805 s
+Number of points not found in tria/tetra =  117
+Interpolating solution via barycentric coordinates...
+Going from  0  to  46771  points
+Elapsed time for Interpolating solution via barycentric coordinates =  0.015993595123291016  s
+Interpolating solution via Nearest Neighbor...
+Elapsed time for Interpolating solution via Nearest Neighbor =  0.03553366661071777  s
+Total Elapsed time =  1.2676615715026855  s
+Field Turb_Kin_Energy is not present here!
+Field Eddy_Viscosity is not present here!
+Write interpolated restart...
+Done! Elapsed time 0.0020949840545654297 s
