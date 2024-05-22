@@ -1,0 +1,84 @@
+Reading point coordinates...
+[' data', 'ZoneType', 'GridCoordinates', 'Elem_Triangles', 'Elem_Quads', 'PointData', 'ZoneIterativeData_t']
+Reading point indices...
+Done! Elapsed time =  0.018613576889038086 s
+Reading gradient of adaptation field...
+Done! Elapsed time =  0.005796909332275391 s
+Reading gradient of adaptation field...
+Done! Elapsed time =  0.0057032108306884766 s
+Reading wall distance field...
+Done! Elapsed time =  0.002121448516845703 s
+Compute cell volumes/areas of all of the cells...
+Computing Cells volumes...
+N of trias:  281340
+N of quads:  140677
+Done! Elapsed time  0.08667135238647461 s
+Extracting Neighbors points...
+Analyzing  283227  points...
+Arrays created.. Now we store neighbors and cells CellsOfPoint structure
+Cells analyzed:  0
+Cells analyzed:  10000
+Cells analyzed:  20000
+Cells analyzed:  30000
+Cells analyzed:  40000
+Cells analyzed:  50000
+Cells analyzed:  60000
+Cells analyzed:  70000
+Cells analyzed:  80000
+Cells analyzed:  90000
+Cells analyzed:  100000
+Cells analyzed:  110000
+Cells analyzed:  120000
+Cells analyzed:  130000
+Cells analyzed:  140000
+Cells analyzed:  150000
+Cells analyzed:  160000
+Cells analyzed:  170000
+Cells analyzed:  180000
+Cells analyzed:  190000
+Cells analyzed:  200000
+Cells analyzed:  210000
+Cells analyzed:  220000
+Cells analyzed:  230000
+Cells analyzed:  240000
+Cells analyzed:  250000
+Cells analyzed:  260000
+Cells analyzed:  270000
+Cells analyzed:  280000
+Cells analyzed:  290000
+Cells analyzed:  300000
+Cells analyzed:  310000
+Cells analyzed:  320000
+Cells analyzed:  330000
+Cells analyzed:  340000
+Cells analyzed:  350000
+Cells analyzed:  360000
+Cells analyzed:  370000
+Cells analyzed:  380000
+Cells analyzed:  390000
+Cells analyzed:  400000
+Cells analyzed:  410000
+Cells analyzed:  420000
+Elapsed time  1.5760269165039062 s
+Computing if a point is inside the prescribed bounding box...
+Done!  275779  found inside the box,  7448  found outside. Elapsed time =  0.03002619743347168  s
+Checking which points are farther from the wall than the minimum distance set...
+Done!  95921  found outside the BL and inside the box,  187306  found inside the BL. Elapsed time =  0.06005239486694336  s
+Computing initial metric...
+Done! Elapsed time  0.22931194305419922 s
+np.mean(avg_S) =  0.002093934999847484
+np.std(avg_S) =  0.0095654736013367
+Computing Cells volumes...
+Done! Elapsed time =  0.011568784713745117  s
+Current complexity of region to adapt =  41412.06327137914
+Total number of points to coarse =  0 , Total number of points to refine =  15492
+Smoothing the metric distribution...
+Done! Elapsed time  0.04193282127380371 s
+Final AdaptedComplexity =  751270.5204519688
+A complexity ratio of 2.0 has been requested
+Current complexity ratio =  18.141344842655776
+Modify metric to enforce desired complexity ratio
+Reached an error = 0.00032429585233562097 after 5 iteration
+Final complexity ratio = 1.9993514082953288
+N of points hitting max spacing =  0   N of points hitting min spacing =  4563
+Total elapsed time =  3.6811983585357666 s

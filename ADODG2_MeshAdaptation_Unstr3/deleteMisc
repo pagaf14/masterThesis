@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm *.vtu *.dat *.err *.out *.cgns *.su2 *.csv
+
+# Loop through all files that match the pattern Mesh_*
+for file in Meshes/Mesh_*; do
+  # Extract the number part of the filename
+  number=$(echo "$file" | grep -oP '(?<=Mesh_)\d+')
+  
+  # Check if the number is greater than 0 and not empty
+  if [[ -n "$number" && "$number" -gt 0 ]]; then
+    # If the number is greater than 0, delete the file
+    rm "$file"
+  fi
+done

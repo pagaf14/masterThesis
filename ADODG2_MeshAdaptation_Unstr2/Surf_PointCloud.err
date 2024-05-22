@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "CreatePointCloud.py", line 23, in <module>
-    index = np.where(first_line == 'Points_0')[0][0]
-IndexError: index 0 is out of bounds for axis 0 with size 0

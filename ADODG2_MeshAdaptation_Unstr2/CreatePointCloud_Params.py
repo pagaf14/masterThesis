@@ -1,16 +1,16 @@
 filenames = ["flow.vtu"]
-fileFormatIn= "CSV"
-fileNameIn= "PointFields.csv"
-fileNameOut= "surface_PointCloud.dat"
+fileFormatIn= "CGNS"
+fileNameIn= "flow2Refine.cgns"
+fileNameOut= "PointCloud.dat"
 
-nDim= 1
+nDim= 2
 actualNDim= 2
 
 
 # General parameters for point cloud and spacing
 decay= 0.8
-maxSpacing= 1e-2
-minSpacing= 1e-4
+maxSpacing= 4.0
+minSpacing= 1e-3
 
 # Check if the complexity ratio paradigm has to be used
 UseComplexityRatio= True
@@ -22,11 +22,11 @@ UseLogExpSmoothing= True
 
 # Check if all of the mesh points have to be written or only the ones whose spacing
 # has been modified
-WriteAllPoints= True
+WriteAllPoints= False
 
 # Boundary layer strategy for removing points which are between the surface and
 # a user-defined distance
-BLTreatment= False
+BLTreatment= True
 wallDistanceMin= 1e-3
 
 # Set if I want to perform more cycles of refinement by removing
@@ -76,10 +76,10 @@ options = {'nDim': nDim,
 
 
 # Adaptation method: Pointwise_OnlyRef, Pointwise_WithCoarsening, Pointwise_Clusters, Re, Re_OnlyRef
-AdaptationMethod= "Pointwise_WithCoarsening"
+AdaptationMethod= "Pointwise_OnlyRef"
 # Error computation method: Pointwise, Pointwise_Mod, Re
 ErrorComputationMethod= "Pointwise"
-AdaptField= "Pressure"
+AdaptField= "Mach"
 
 # Parameters for adaptation from Pointwise methodology
 p= 1
